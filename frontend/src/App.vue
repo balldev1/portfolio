@@ -4,13 +4,15 @@
     <Layout @toggle-file="toggleFile" />
     <!-- toggle file -->
     <div
-      v-if="showFile"
-      class="min-h-screen ml-15 px-4 py-6 border-r-[1px] border-stone-800"
+      :class="[
+        'transition-all duration-300 ease-in-out overflow-hidden border-r-[1px] border-stone-800 min-h-screen px-4 py-6',
+        showFile ? 'ml-20 w-64 opacity-100' : 'w-0 opacity-0',
+      ]"
     >
-      explorer port
+      <div v-if="showFile">explorer port</div>
     </div>
     <!-- RouterView -->
-    <div :class="showFile ? 'ml-0 bg-rose-200' : 'ml-15 '">
+    <div :class="showFile ? 'ml-0 ' : 'ml-15 '">
       <!-- <RouterView /> -->
     </div>
   </div>
@@ -20,10 +22,8 @@
 import { ref } from "vue";
 import Layout from "./components/main/Layout.vue";
 
-// toggle state
 const showFile = ref(false);
 
-// toggle function
 const toggleFile = () => {
   showFile.value = !showFile.value;
 };

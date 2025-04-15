@@ -1,25 +1,27 @@
 <template>
   <div
-    class="fixed flex flex-col p-3 py-5 gap-6 border-r-[1px] min-h-screen border-stone-800"
+    class="fixed flex flex-col items-center gap-10 py-6 px-5 just border-r-[1px] min-h-screen border-stone-800"
   >
     <!-- Emit event เมื่อกดไอคอน -->
-    <div class="tooltip tooltip-right" data-tip="Portfolio" @click="emitToggle">
-      <Files size="35" :stroke-width="1" class="cursor-pointer" />
-    </div>
+    <button
+      @click="emitToggle"
+      class="cursor-pointer tooltip tooltip-right"
+      data-tip="Portfolio"
+    >
+      <Files size="40" :stroke-width="1" />
+    </button>
 
-    <div class="tooltip tooltip-right" data-tip="Github">
-      <Github
-        size="35"
-        :stroke-width="1"
-        class="cursor-pointer text-stone-500 hover:text-white"
-      />
+    <div
+      class="tooltip tooltip-right text-stone-500 cursor-pointer hover:text-white"
+      data-tip="Linkedin"
+    >
+      <Github size="40" :stroke-width="1" clip="h-full w-full" />
     </div>
-    <div class="tooltip tooltip-right" data-tip="Linkedin">
-      <Linkedin
-        size="35"
-        :stroke-width="1"
-        class="cursor-pointer text-stone-500 hover:text-white"
-      />
+    <div
+      class="tooltip tooltip-right text-stone-500 cursor-pointer hover:text-white"
+      data-tip="Linkedin"
+    >
+      <Linkedin size="40" :stroke-width="1" />
     </div>
   </div>
 </template>
