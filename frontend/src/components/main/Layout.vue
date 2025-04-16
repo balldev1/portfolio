@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed flex flex-col items-center gap-10 py-6 px-5 just border-r-[1px] min-h-screen border-stone-800"
+    class="fixed flex flex-col items-center gap-6 py-6 px-5 just min-h-screen"
   >
     <!-- Emit event เมื่อกดไอคอน -->
     <button
