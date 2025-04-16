@@ -6,6 +6,7 @@ This template should help get you started developing with Vue 3 in Vite.
 
 npm vue-router
 npm install lucide-vue-next
+npm install vue-i18n
 
 ## Customize configuration
 

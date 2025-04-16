@@ -11,18 +11,22 @@
       <Files size="40" :stroke-width="1" />
     </button>
 
-    <div
+    <a
+      href="https://github.com/balldev1?tab=repositories"
+      target="_blank"
       class="tooltip tooltip-right text-stone-500 cursor-pointer hover:text-white"
       data-tip="Linkedin"
     >
       <Github size="40" :stroke-width="1" clip="h-full w-full" />
-    </div>
-    <div
+    </a>
+    <a
+      href="https://www.linkedin.com/in/nanthawat-cola-6733bb28a/"
+      target="_blank"
       class="tooltip tooltip-right text-stone-500 cursor-pointer hover:text-white"
       data-tip="Linkedin"
     >
       <Linkedin size="40" :stroke-width="1" />
-    </div>
+    </a>
   </div>
 </template>
 

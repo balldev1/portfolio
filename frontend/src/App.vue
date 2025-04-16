@@ -9,7 +9,12 @@
         showFile ? 'ml-20 w-64 opacity-100' : 'w-0 opacity-0',
       ]"
     >
-      <div v-if="showFile">explorer port</div>
+      <div v-if="showFile">
+        explorer port
+        <p>{{ t("hello") }}</p>
+      </div>
+      <button @click="setLang('en')">EN</button>
+      <button @click="setLang('th')">TH</button>
     </div>
     <!-- RouterView -->
     <div :class="showFile ? 'ml-0 ' : 'ml-15 '">
@@ -20,9 +25,17 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
+import { useI18n } from "vue-i18n";
 import Layout from "./components/main/Layout.vue";
 
-const showFile = ref(false);
+const { t, locale } = useI18n();
+
+const setLang = (lang) => {
+  locale.value = lang;
+  localStorage.setItem("language", lang); // เก็บไว้ใช้รอบหน้า
+};
+
+const showFile = ref(true);
 
 const toggleFile = () => {
   showFile.value = !showFile.value;
