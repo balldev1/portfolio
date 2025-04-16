@@ -23,7 +23,11 @@
           showFile ? 'ml-0' : 'ml-11',
         ]"
       >
-        <div class="p-5 mt-5"><RouterView /></div>
+        <Ontop @toggle-ontop="toggleFile" />
+        <!-- content -->
+        <div>
+          <div class="p-5 mt-10"><RouterView /></div>
+        </div>
       </div>
     </div>
   </div>
@@ -32,7 +36,7 @@
 import { ref } from "vue";
 import Layout from "./components/main/Layout.vue";
 import Header from "./components/main/Header.vue";
-
+import Ontop from "./components/main/Ontop.vue";
 import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();

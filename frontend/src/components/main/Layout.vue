@@ -40,14 +40,6 @@
 
 <script setup>
 import { Files, Github, Linkedin, Languages } from "lucide-vue-next";
-import { useI18n } from "vue-i18n";
-
-const { t, locale } = useI18n();
-
-const toggleLang = () => {
-  locale.value = locale.value === "th" ? "en" : "th";
-  localStorage.setItem("language", locale.value);
-};
 
 const emit = defineEmits(["toggle-file"]);
 
