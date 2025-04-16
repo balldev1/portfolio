@@ -29,3 +29,25 @@ npm run dev
 ```sh
 npm run build
 ```
+
+ <!-- sidebar -->
+  <div class="bg-rose-500">
+    <div class="flex">
+      <Layout @toggle-file="toggleFile" />
+      <div
+        :class="[
+          'transition-all duration-300 ease-in-out overflow-hidden border-r-[1px] border-stone-800 min-h-screen px-4 py-6',
+          showFile ? 'ml-20 w-64 opacity-100' : 'w-0 opacity-0',
+        ]"
+      >
+        <div v-if="showFile">
+          explorer port
+          <p>{{ t("hello") }}</p>
+        </div>
+      </div>
+      <!-- RouterView_body -->
+      <div :class="showFile ? 'ml-0 ' : 'ml-15 '">
+        <!-- <RouterView /> -->
+      </div>
+    </div>
+  </div>

@@ -1,6 +1,10 @@
-@import "./base.css";
 @import "tailwindcss";
 @plugin "daisyui";
+
+#app {
+  max-width: 1280px;
+  font-weight: normal;
+}
 
 body {
   @apply bg-stone-950 text-white min-h-screen flex;
