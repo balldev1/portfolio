@@ -13,8 +13,6 @@
         explorer port
         <p>{{ t("hello") }}</p>
       </div>
-      <button @click="setLang('en')">EN</button>
-      <button @click="setLang('th')">TH</button>
     </div>
     <!-- RouterView -->
     <div :class="showFile ? 'ml-0 ' : 'ml-15 '">
@@ -25,15 +23,10 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { useI18n } from "vue-i18n";
 import Layout from "./components/main/Layout.vue";
+import { useI18n } from "vue-i18n";
 
-const { t, locale } = useI18n();
-
-const setLang = (lang) => {
-  locale.value = lang;
-  localStorage.setItem("language", lang); // เก็บไว้ใช้รอบหน้า
-};
+const { t } = useI18n();
 
 const showFile = ref(true);
 
