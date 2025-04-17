@@ -5,6 +5,7 @@
     <!-- sidebar -->
     <div class="flex pt-8">
       <Layout @toggle-file="toggleFile" />
+
       <div
         :class="[
           'transition-all duration-300 ease-in-out overflow-hidden border-l-[1px] border-stone-700 min-h-screen px-4 py-6',
@@ -12,8 +13,8 @@
         ]"
       >
         <div v-if="showFile">
-          explorer port
-          <p>{{ t("hello") }}</p>
+          <SelectExplorer />
+          <!-- <p>{{ t("hello") }}</p> -->
         </div>
       </div>
       <div
@@ -32,10 +33,12 @@
 </template>
 <script setup lang="ts">
 import { ref } from "vue";
+import { useI18n } from "vue-i18n";
+
 import Layout from "./components/main/Layout.vue";
 import Header from "./components/main/Header.vue";
 import Ontop from "./components/main/Ontop.vue";
-import { useI18n } from "vue-i18n";
+import SelectExplorer from "./components/main/SelectExplorer.vue";
 
 const { t } = useI18n();
 
