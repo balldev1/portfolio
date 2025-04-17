@@ -6,6 +6,7 @@ const messages = {
     Home: "หน้าแรก",
     Project: "โปรเจค",
     Note: "โน้ต",
+    Portfolio: "แฟ้มผลงาน",
     changeLang: "เปลี่ยนภาษา",
   },
 };

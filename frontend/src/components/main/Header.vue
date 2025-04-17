@@ -15,7 +15,7 @@
           class="flex gap-1 items-center justify-center text-[12px] py-1 relative rounded-sm border-[1px] w-96 bg-slate-500/50 dark:bg-slate-500/10 dark:border-stone-700 border-stone-500"
         >
           <Search size="14" />
-          asd
+          {{ t("Portfolio") }}
         </div>
         <div class="flex items-center gap-1">
           <Bot size="18" />
@@ -42,4 +42,7 @@ import {
   PanelsRightBottom,
   PanelTop,
 } from "lucide-vue-next";
+
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 </script>

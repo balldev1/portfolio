@@ -36,10 +36,8 @@
 import TieredMenu from "primevue/panelmenu";
 import { ChevronDown } from "lucide-vue-next";
 import { useRouter } from "vue-router";
-import { ref } from "vue";
 import { useI18n } from "vue-i18n";
 import { computed } from "vue";
-
 const { t } = useI18n();
 
 const router = useRouter();

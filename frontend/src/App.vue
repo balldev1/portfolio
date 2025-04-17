@@ -14,7 +14,6 @@
       >
         <div v-if="showFile">
           <SelectExplorer />
-          <!-- <p>{{ t("hello") }}</p> -->
         </div>
       </div>
       <div
