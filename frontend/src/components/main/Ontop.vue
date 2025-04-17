@@ -10,7 +10,7 @@
             alt="Vue Logo"
             class="w-4 h-4"
           />
-          <span>balldev.vue</span>
+          <span>test.vue</span>
           <X size="15" :stroke-width="1" class="mt-1" />
         </div>
       </div>

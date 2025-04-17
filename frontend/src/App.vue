@@ -18,7 +18,7 @@
       </div>
       <div
         :class="[
-          'mt-0 w-full border-l-[1px] border-stone-700 bg-slate-500/10',
+          'mt-0 w-full border-l-[1px] border-stone-700 bg-slate-500/50 dark:bg-slate-500/10',
           showFile ? 'ml-0' : 'ml-11',
         ]"
       >
