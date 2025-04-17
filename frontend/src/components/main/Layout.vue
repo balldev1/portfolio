@@ -2,7 +2,6 @@
   <div
     class="fixed flex flex-col items-center gap-6 py-6 px-5 just min-h-screen"
   >
-    <!-- Emit event เมื่อกดไอคอน -->
     <button
       @click="emitToggle"
       class="cursor-pointer tooltip tooltip-right"
@@ -40,10 +39,17 @@
 
 <script setup>
 import { Files, Github, Linkedin, Languages } from "lucide-vue-next";
+import { useI18n } from "vue-i18n";
 
 const emit = defineEmits(["toggle-file"]);
 
 const emitToggle = () => {
   emit("toggle-file");
+};
+const { locale } = useI18n();
+
+const toggleLang = () => {
+  locale.value = locale.value === "th" ? "en" : "th";
+  localStorage.setItem("language", locale.value);
 };
 </script>

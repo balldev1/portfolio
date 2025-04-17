@@ -16,7 +16,6 @@
           <p>{{ t("hello") }}</p>
         </div>
       </div>
-      <!-- RouterView_body -->
       <div
         :class="[
           'mt-0 w-full border-l-[1px] border-stone-700 bg-slate-500/10',
@@ -24,7 +23,6 @@
         ]"
       >
         <Ontop @toggle-ontop="toggleFile" />
-        <!-- content -->
         <div>
           <div class="p-5 mt-10"><RouterView /></div>
         </div>
