@@ -72,8 +72,9 @@ const items = computed(() => [
         lazy: true,
         items: [
           {
-            label: "Document",
+            label: t("currency"),
             icon: "pi pi-twitch",
+            route: "/currency",
           },
           {
             label: "Image",

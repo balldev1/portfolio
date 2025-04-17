@@ -8,6 +8,7 @@ const messages = {
     Note: "โน้ต",
     Portfolio: "แฟ้มผลงาน",
     changeLang: "เปลี่ยนภาษา",
+    currency: "สกุลเงิน",
   },
 };
 
