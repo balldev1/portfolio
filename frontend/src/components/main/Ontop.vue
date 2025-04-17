@@ -10,7 +10,13 @@
             alt="Vue Logo"
             class="w-4 h-4"
           />
-          <span>test.vue</span>
+          <span class="first-letter:uppercase">
+            {{
+              route.path.replace("/", "")
+                ? route.path.replace("/", "") + ".vue"
+                : "Explorer.vue"
+            }}
+          </span>
           <X size="15" :stroke-width="1" class="mt-1" />
         </div>
       </div>
@@ -19,5 +25,8 @@
 </template>
 
 <script setup>
+import { useRoute } from "vue-router"; // ✅ useRoute ไม่ใช่ useParama
 import { X } from "lucide-vue-next";
+
+const route = useRoute(); // ✅ ต้องเรียก useRoute()
 </script>

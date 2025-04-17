@@ -2,14 +2,17 @@ import { createI18n } from "vue-i18n";
 
 const messages = {
   th: {
-    hello: "สวัสดี",
+    Explorer: "พอร์ต",
+    Home: "หน้าแรก",
+    Project: "โปรเจค",
+    Note: "โน้ต",
     changeLang: "เปลี่ยนภาษา",
   },
 };
 
 const i18n = createI18n({
   legacy: false,
-  locale: localStorage.getItem("lang") || "th",
+  locale: localStorage.getItem("lang") || "en",
   fallbackLocale: "en",
   messages,
 });

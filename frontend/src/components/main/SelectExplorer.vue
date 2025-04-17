@@ -12,7 +12,12 @@
     :model="items"
   >
     <template #item="{ item, props, hasSubmenu }">
-      <a v-ripple class="flex items-center" v-bind="props.action">
+      <a
+        @click.prevent="handleClick(item)"
+        v-ripple
+        class="flex items-center"
+        v-bind="props.action"
+      >
         <span :class="item.icon" />
         <span class="ml-2">{{ item.label }}</span>
         <Badge v-if="item.badge" class="ml-auto" :value="item.badge" />
@@ -21,7 +26,6 @@
           class="ml-auto border border-surface rounded bg-emphasis text-muted-color text-xs p-1"
           >{{ item.shortcut }}</span
         >
-        <i v-if="hasSubmenu" class="pi pi-angle-right ml-auto"></i>
         <ChevronDown v-if="hasSubmenu" size="20" class="ml-auto" />
       </a>
     </template>
@@ -31,41 +35,75 @@
 <script setup>
 import TieredMenu from "primevue/panelmenu";
 import { ChevronDown } from "lucide-vue-next";
-
+import { useRouter } from "vue-router";
 import { ref } from "vue";
+import { useI18n } from "vue-i18n";
+import { computed } from "vue";
 
-const items = ref([
+const { t } = useI18n();
+
+const router = useRouter();
+
+const handleClick = (item) => {
+  if (item.route) {
+    router.push(item.route);
+  }
+};
+
+const items = computed(() => [
   {
-    label: "Explorer port",
-    icon: "pi pi-file",
+    label: t("Explorer"),
+    icon: "pi pi-folder-open",
     items: [
       {
-        label: "Project",
-        icon: "pi pi-plus",
+        label: t("Home"),
+        icon: "pi pi-share-alt",
+        shortcut: "now",
+        route: "/",
+      },
+      {
+        label: "Contact",
+        icon: "pi pi-share-alt",
+        shortcut: `now`,
+        route: "/contact",
+      },
+      {
+        label: t("Project"),
+        icon: "pi pi-discord",
+        items: null,
+        lazy: true,
         items: [
           {
             label: "Document",
-            icon: "pi pi-file",
+            icon: "pi pi-twitch",
           },
           {
             label: "Image",
-            icon: "pi pi-image",
+            icon: "pi pi-twitch",
           },
           {
             label: "Video",
-            icon: "pi pi-video",
+            icon: "pi pi-twitch",
           },
         ],
       },
       {
-        label: "Open",
-        icon: "pi pi-folder-open",
-        shortcut: ".",
-      },
-      {
-        label: "Print",
-        icon: "pi pi-print",
-        shortcut: ".",
+        label: t("Note"),
+        icon: "pi pi-hashtag",
+        items: [
+          {
+            label: "Document",
+            icon: "pi pi-code",
+          },
+          {
+            label: "Image",
+            icon: "pi pi-code",
+          },
+          {
+            label: "Video",
+            icon: "pi pi-code ",
+          },
+        ],
       },
     ],
   },
