@@ -31,6 +31,13 @@ return [
 
     'connections' => [
 
+
+        'mongodb' => [
+            'driver' => 'mongodb',
+            'dsn' => env('DB_DATABASE', 'mongodb://localhost:27017'),
+            'database' => env('MONGODB_DATABASE', 'node_js'),
+        ],
+
         'sqlite' => [
             'driver' => 'sqlite',
             'url' => env('DB_URL'),

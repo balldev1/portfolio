@@ -77,8 +77,9 @@ const items = computed(() => [
             route: "/currency",
           },
           {
-            label: "Image",
+            label: t("Note"),
             icon: "pi pi-twitch",
+            route: "/note",
           },
           {
             label: "Video",

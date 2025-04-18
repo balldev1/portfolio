@@ -1,5 +1,7 @@
 <template>
-  <div class="bg-stone-950 w-full fixed mt-2 border-b-[1px] border-stone-700">
+  <div
+    class="bg-stone-950 w-full fixed mt-2 border-b-[1px] border-stone-700 z-40"
+  >
     <div class="flex items-center">
       <div class="border-t-4 border-lime-600">
         <div
