@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-screen relative">
+  <div class="w-full pr-2 h-screen relative">
     <!-- แสดง Loading ระหว่างโหลด -->
     <div
       v-if="isLoading"
