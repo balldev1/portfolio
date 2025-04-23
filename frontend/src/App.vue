@@ -11,11 +11,11 @@
       <!-- explorer sidebar -->
       <div
         :class="[
-          'transition-all duration-300 ease-in-out overflow-hidden border-l border-stone-700 min-h-screen px-4 py-6',
-          showFile ? 'ml-20 w-64 opacity-100' : 'w-0 opacity-0',
+          'transition-all  duration-300 ease-in-out overflow-hidden border-l border-stone-700 min-h-screen px-4 py-6',
+          showFile ? 'ml-18   w-70 opacity-100' : 'w-0 opacity-0',
         ]"
       >
-        <div v-if="showFile">
+        <div v-if="showFile" class="">
           <SelectExplorer />
         </div>
       </div>
@@ -31,7 +31,7 @@
 
         <!-- transition RouterView in/out -->
         <div
-          class="p-5 mt-10 transform transition-all duration-500 ease-in-out"
+          class="mt-14 transform transition-all duration-500 ease-in-out"
           :class="
             showFile ? 'translate-x-0 opacity-100' : 'translate-x-4 opacity-80'
           "
@@ -47,10 +47,10 @@
 import { ref } from "vue";
 import { useI18n } from "vue-i18n";
 
-import Layout from "./components/main/Layout.vue";
-import Header from "./components/main/Header.vue";
-import Ontop from "./components/main/Ontop.vue";
-import SelectExplorer from "./components/main/SelectExplorer.vue";
+import Layout from "./components/layout/Layout.vue";
+import Header from "./components/layout/Header.vue";
+import Ontop from "./components/layout/Ontop.vue";
+import SelectExplorer from "./components/layout/SidebarSelectExplorer.vue";
 
 const { t } = useI18n();
 

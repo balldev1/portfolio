@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed flex flex-col items-center gap-6 py-6 px-5 just min-h-screen"
+    class="fixed flex flex-col items-center gap-6 py-6 px-5 just min-h-screen z-50"
   >
     <button
       @click="emitToggle"

@@ -5,7 +5,7 @@
       header: { class: ' !border-none !p-0 !pr-2' },
       action: { class: '!pr-2 !text-slate-400 !p-2 ' },
       menucontent: {
-        class: '!bg-slate-500/10  !border-none ',
+        class: '!bg-slate-500/10  !border-none !',
       },
     }"
     class="mypanel text-sm"
@@ -71,6 +71,21 @@ const items = computed(() => [
         items: null,
         lazy: true,
         items: [
+          {
+            label: t("wireless_guru"),
+            icon: "pi pi-twitch",
+            route: "/wireless-guru",
+          },
+          {
+            label: t("ss_it"),
+            icon: "pi pi-twitch",
+            route: "/ss-it",
+          },
+          {
+            label: t("modern_network"),
+            icon: "pi pi-twitch",
+            route: "/modern-network",
+          },
           {
             label: t("currency"),
             icon: "pi pi-twitch",

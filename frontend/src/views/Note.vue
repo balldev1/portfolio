@@ -18,7 +18,7 @@
     <div
       :class="[
         isSidebarOpen ? 'pt-10' : 'pt-5 ',
-        'transition-all duration-300  flex items-center justify-center ',
+        'transition-all duration-300 bg-rose-500  flex items-center justify-center ',
       ]"
     >
       <ContentNote />

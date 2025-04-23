@@ -97,6 +97,6 @@ const formatDate = (dateString) => {
 };
 
 onMounted(() => {
-  fetchPosts();
+  // fetchPosts();
 });
 </script>

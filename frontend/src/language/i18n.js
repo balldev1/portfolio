@@ -9,6 +9,9 @@ const messages = {
     Portfolio: "แฟ้มผลงาน",
     changeLang: "เปลี่ยนภาษา",
     currency: "สกุลเงิน",
+    wireless_guru: "ไวเลสกูรู",
+    ss_it: "เอสเอสไอที",
+    modern_network: "โมเดลเน็ตเวิร์ก",
   },
 };
 
