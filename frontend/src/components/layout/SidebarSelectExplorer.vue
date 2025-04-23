@@ -87,6 +87,11 @@ const items = computed(() => [
             route: "/modern-network",
           },
           {
+            label: t("pokemon"),
+            icon: "pi pi-twitch",
+            route: "/pokemon",
+          },
+          {
             label: t("currency"),
             icon: "pi pi-twitch",
             route: "/currency",

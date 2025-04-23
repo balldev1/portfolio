@@ -11,6 +11,7 @@ const messages = {
     currency: "สกุลเงิน",
     wireless_guru: "ไวเลสกูรู",
     ss_it: "เอสเอสไอที",
+    pokemon: "โปเกมอน",
     modern_network: "โมเดลเน็ตเวิร์ก",
   },
 };
