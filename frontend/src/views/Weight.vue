@@ -18,12 +18,14 @@
     <div
       :class="[
         isSidebarOpen ? 'pt-10' : 'pt-5 ',
-        'transition-all duration-300 bg-rose-500  flex px-10 ',
+        'transition-all duration-300  flex px-10 ',
       ]"
     >
-      test
+      <Weight />
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import Weight from "@/components/project/single/Weight.vue";
+</script>

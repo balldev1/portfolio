@@ -1,7 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 
 import Home from "../views/Home.vue";
-import Contact from "../views/Contact.vue";
+import Public from "../views/Public.vue";
 import Wiress_guru from "../views/Wirelessguru.vue";
 import Ssit from "../views/Ssit.vue";
 import Modernnetwork from "../views/Modernnetwork.vue";
@@ -14,7 +14,7 @@ import Door from "../views/Door.vue";
 
 const routes = [
   { path: "/", component: Home },
-  { path: "/contact", component: Contact },
+  { path: "/public", component: Public },
   { path: "/wireless-guru", component: Wiress_guru },
   { path: "/ss-it", component: Ssit },
   { path: "/modern-network", component: Modernnetwork },

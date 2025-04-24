@@ -18,12 +18,14 @@
     <div
       :class="[
         isSidebarOpen ? 'pt-10' : 'pt-5 ',
-        'transition-all duration-300 bg-rose-500  flex px-10 ',
+        'transition-all duration-300  flex px-10 ',
       ]"
     >
-      test
+      <Door />
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import Door from "@/components/project/single/Door.vue";
+</script>

@@ -60,10 +60,10 @@ const items = computed(() => [
         route: "/",
       },
       {
-        label: "Contact",
-        icon: "pi pi-share-alt",
+        label: "Public",
+        icon: "pi pi-globe",
         shortcut: `now`,
-        route: "/contact",
+        route: "/public",
       },
       {
         label: t("Project"),
