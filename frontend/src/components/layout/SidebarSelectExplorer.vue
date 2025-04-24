@@ -87,6 +87,21 @@ const items = computed(() => [
             route: "/modern-network",
           },
           {
+            label: t("tr069"),
+            icon: "pi pi-twitch",
+            route: "/tr069",
+          },
+          {
+            label: t("weight"),
+            icon: "pi pi-twitch",
+            route: "/weight",
+          },
+          {
+            label: t("door"),
+            icon: "pi pi-twitch",
+            route: "/door",
+          },
+          {
             label: t("pokemon"),
             icon: "pi pi-twitch",
             route: "/pokemon",
@@ -96,15 +111,15 @@ const items = computed(() => [
             icon: "pi pi-twitch",
             route: "/currency",
           },
-          {
-            label: t("Note"),
-            icon: "pi pi-twitch",
-            route: "/note",
-          },
-          {
-            label: "Video",
-            icon: "pi pi-twitch",
-          },
+          // {
+          //   label: t("Note"),
+          //   icon: "pi pi-twitch",
+          //   route: "/note",
+          // },
+          // {
+          //   label: "Video",
+          //   icon: "pi pi-twitch",
+          // },
         ],
       },
       {
