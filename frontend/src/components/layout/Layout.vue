@@ -14,7 +14,7 @@
       href="https://github.com/balldev1?tab=repositories"
       target="_blank"
       class="tooltip tooltip-right text-stone-500 cursor-pointer hover:text-white"
-      data-tip="Linkedin"
+      data-tip="Github"
     >
       <Github size="35" :stroke-width="1" clip="h-full w-full" />
     </a>

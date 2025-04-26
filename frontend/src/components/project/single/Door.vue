@@ -9,7 +9,7 @@
       system supports real-time command execution and provides a user-friendly
       interface for access control management.
     </span>
-    <div class="bg-rose-500 w-full">
+    <div class="w-full">
       <img src="/project/door.webp" />
     </div>
   </div>

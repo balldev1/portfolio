@@ -32,7 +32,7 @@ npm run build
 ```
 
  <!-- sidebar -->
-  <div class="bg-rose-500">
+  <div class="">
     <div class="flex">
       <Layout @toggle-file="toggleFile" />
       <div

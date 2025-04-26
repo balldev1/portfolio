@@ -12,7 +12,7 @@
       developed with a senior developer and is currently used internally within
       the company.
     </span>
-    <div class="bg-rose-500 w-full">
+    <div class="w-full">
       <img src="/project/weight.webp" />
     </div>
   </div>

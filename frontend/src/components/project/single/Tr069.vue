@@ -10,7 +10,7 @@
       graphical visualizations. The application is deployed using aaPanel as the
       server management platform.</span
     >
-    <div class="bg-rose-500 w-full">
+    <div class="w-full">
       <img src="/project/tr069.webp" />
     </div>
   </div>
