@@ -80,7 +80,7 @@ const toggleDark = () => {
 onMounted(() => {
   const savedTheme = localStorage.getItem("theme");
   const html = document.documentElement;
-
+  localStorage.setItem("theme", "dark");
   if (savedTheme === "dark") {
     isDark.value = true;
     html.classList.add("dark");

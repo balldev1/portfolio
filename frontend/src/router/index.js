@@ -5,6 +5,7 @@ import Public from "../views/Public.vue";
 import Wiress_guru from "../views/Wirelessguru.vue";
 import Ssit from "../views/Ssit.vue";
 import Modernnetwork from "../views/Modernnetwork.vue";
+import OrderFood from "../views/OrderFood.vue";
 import Pokemon from "../views/Pokemon.vue";
 import Currency from "../views/Currency.vue";
 import Note from "../views/Note.vue";
@@ -19,6 +20,7 @@ const routes = [
   { path: "/ss-it", component: Ssit },
   { path: "/modern-network", component: Modernnetwork },
   { path: "/tr069", component: Tr069 },
+  { path: "/orderfood", component: OrderFood },
   { path: "/weight", component: Weight },
   { path: "/door", component: Door },
   { path: "/pokemon", component: Pokemon },
