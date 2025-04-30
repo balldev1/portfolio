@@ -128,12 +128,13 @@ const items = computed(() => [
         ],
       },
       {
-        label: t("Note"),
+        label: t("Learn"),
         icon: "pi pi-hashtag",
         items: [
           {
-            label: "Document",
+            label: "Spring_Boot_Api",
             icon: "pi pi-code",
+            route: "/springboot",
           },
           {
             label: "Image",

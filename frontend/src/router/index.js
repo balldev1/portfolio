@@ -12,6 +12,7 @@ import Note from "../views/Note.vue";
 import Tr069 from "../views/Tr069.vue";
 import Weight from "../views/Weight.vue";
 import Door from "../views/Door.vue";
+import Springboot from "../views/Springboot.vue";
 
 const routes = [
   { path: "/", component: Home },
@@ -26,6 +27,7 @@ const routes = [
   { path: "/pokemon", component: Pokemon },
   { path: "/currency", component: Currency },
   { path: "/note", component: Note },
+  { path: "/springboot", component: Springboot },
 ];
 
 const router = createRouter({
