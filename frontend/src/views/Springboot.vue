@@ -12,5 +12,5 @@
 </template>
 
 <script setup>
-import Springboot from "@/components/project/Note/Springboot.vue";
+import Springboot from "@/components/project/note/Springboot.vue";
 </script>
