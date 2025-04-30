@@ -34,6 +34,6 @@ defineProps({
   },
 });
 
-import ModalAddNote from "@/components/project/Note/ModalAddNote.vue";
-import ContentNote from "@/components/project/Note/ContentNote.vue";
+import ModalAddNote from "@/components/project/note/ModalAddNote.vue";
+import ContentNote from "@/components/project/note/ContentNote.vue";
 </script>
