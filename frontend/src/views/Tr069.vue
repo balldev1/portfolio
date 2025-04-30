@@ -12,7 +12,7 @@
           'transition-all duration-300 flex',
         ]"
       >
-        <ModalAddNote />
+        <!-- <ModalAddNote /> -->
       </div>
     </div>
     <div
