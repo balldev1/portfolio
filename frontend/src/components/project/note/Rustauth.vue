@@ -35,8 +35,13 @@
       └── └── jwt.rs # ฟังก์ชันที่ใช้ในการสร้าง/ตรวจสอบ JWT สำหรับการเข้าระบบ
       <br />
     </span>
+
     <span class="text-gray-300 text-sm text-balance">
       Doc : https://doc.rust-lang.org/book/
+    </span>
+
+    <span class="text-gray-300 text-sm text-balance">
+      Github : https://github.com/balldev1/rust_auth
     </span>
 
     <div class="mt-5 flex flex-col gap-5">
