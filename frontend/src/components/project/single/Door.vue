@@ -10,7 +10,7 @@
       interface for access control management.
     </span>
     <div class="w-full">
-      <img src="/project/door.webp" />
+      <img src="/project/door.webp" loading="lazy" />
     </div>
   </div>
 </template>

@@ -137,8 +137,9 @@ const items = computed(() => [
             route: "/springboot",
           },
           {
-            label: "Image",
+            label: "Rust_auth",
             icon: "pi pi-code",
+            route: "/rustauth",
           },
           {
             label: "Video",

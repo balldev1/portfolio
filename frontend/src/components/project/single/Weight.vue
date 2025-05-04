@@ -13,7 +13,7 @@
       the company.
     </span>
     <div class="w-full">
-      <img src="/project/weight.webp" />
+      <img src="/project/weight.webp" loading="lazy" />
     </div>
   </div>
 </template>

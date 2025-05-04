@@ -13,6 +13,7 @@ import Tr069 from "../views/Tr069.vue";
 import Weight from "../views/Weight.vue";
 import Door from "../views/Door.vue";
 import Springboot from "../views/Springboot.vue";
+import Rustauth from "@/views/Rustauth.vue";
 
 const routes = [
   { path: "/", component: Home },
@@ -28,6 +29,7 @@ const routes = [
   { path: "/currency", component: Currency },
   { path: "/note", component: Note },
   { path: "/springboot", component: Springboot },
+  { path: "/rustauth", component: Rustauth },
 ];
 
 const router = createRouter({

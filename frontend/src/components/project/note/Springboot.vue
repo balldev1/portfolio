@@ -25,9 +25,9 @@
       Ref : https://www.youtube.com/watch?v=Ka7Sm8W84iw
     </span>
     <div class="mt-5 flex flex-col gap-5">
-      <img src="/project/springboot1.png" class="" />
-      <img src="/project/springboot2.png" />
-      <img src="/project/springboot3.png" />
+      <img src="/project/springboot1.png" loading="lazy" />
+      <img src="/project/springboot2.png" loading="lazy" />
+      <img src="/project/springboot3.png" loading="lazy" />
     </div>
   </div>
 </template>

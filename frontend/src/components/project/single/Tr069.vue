@@ -11,7 +11,7 @@
       server management platform.</span
     >
     <div class="w-full">
-      <img src="/project/tr069.webp" />
+      <img src="/project/tr069.webp" loading="lazy" />
     </div>
   </div>
 </template>
