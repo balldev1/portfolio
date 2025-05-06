@@ -19,7 +19,7 @@
     </span>
 
     <div class="mt-5 flex flex-col gap-5 w-full items-center">
-      <img src="/project/vue.jpeg" loading="lazy" class="w-[40rem]" />
+      <img src="/project/vuenuxt.png" loading="lazy" class="w-[40rem]" />
     </div>
   </div>
 </template>
