@@ -18,20 +18,21 @@
     <!-- เมนู sticky -->
     <div class="w-60 p-2 sticky pl-5 top-24 self-start">
       <button
-        @click="scrollToDom"
+        @click="scrollTo('dom')"
         :class="{
-          'bg-gray-500 text-white ': isDomActive,
-          'bg-white': !isDomActive,
+          'bg-gray-500 text-white': activeSection === 'dom',
+          'bg-white': activeSection !== 'dom',
         }"
         class="btn btn-sm border-none text-black rounded m-1 hover:bg-gray-500 hover:text-white"
       >
         dom
       </button>
+
       <button
-        @click="scrollToOop"
+        @click="scrollTo('oop')"
         :class="{
-          'bg-gray-500 text-white': isOopActive,
-          'bg-white': !isOopActive,
+          'bg-gray-500 text-white': activeSection === 'oop',
+          'bg-white': activeSection !== 'oop',
         }"
         class="btn btn-sm border-none text-black rounded m-1 hover:bg-gray-500 hover:text-white"
       >
@@ -46,26 +47,21 @@ import { ref } from "vue";
 import Dom from "./Basic/Dom.vue";
 import Oop from "./Basic/Oop.vue";
 
-// สถานะของปุ่มที่จะติดคลาส bg-gray-500
-const isOopActive = ref(false);
-const isDomActive = ref(false);
+// ตัวแปรเดียวใช้เก็บ section ที่ active
+const activeSection = ref<"dom" | "oop" | null>(null);
 
 // refs สำหรับการเลื่อน
 const domRef = ref<HTMLElement | null>(null);
 const oopRef = ref<HTMLElement | null>(null);
 
-const scrollToDom = () => {
-  domRef.value?.scrollIntoView({ behavior: "smooth" });
-  // เปลี่ยนสถานะของปุ่ม
-  isDomActive.value = true;
-  isOopActive.value = false; // ลบคลาส bg-gray-500 เมื่อไปที่ dom
-};
-
-const scrollToOop = () => {
-  oopRef.value?.scrollIntoView({ behavior: "smooth" });
-  // เปลี่ยนสถานะของปุ่ม
-  isDomActive.value = false; // ลบคลาส bg-gray-300 เมื่อไปที่ oop
-  isOopActive.value = true; // เพิ่มคลาส bg-gray-500 เมื่อไปที่ oop
+// ฟังก์ชันรวม
+const scrollTo = (section: "dom" | "oop") => {
+  activeSection.value = section;
+  if (section === "dom") {
+    domRef.value?.scrollIntoView({ behavior: "smooth" });
+  } else if (section === "oop") {
+    oopRef.value?.scrollIntoView({ behavior: "smooth" });
+  }
 };
 </script>
 
