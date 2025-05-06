@@ -16,8 +16,8 @@
       ให้เห็นผ่าน View<br />
     </span>
 
-    <div class="mt-5 flex flex-col gap-5 w-[40rem]">
-      <img src="/project/mvc.jpg" loading="lazy" />
+    <div class="mt-5 flex flex-col gap-5 w-full items-center">
+      <img src="/project/mvc.jpg" loading="lazy" class="w-[30rem]" />
     </div>
   </div>
 </template>

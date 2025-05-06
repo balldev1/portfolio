@@ -16,8 +16,8 @@
       p, h1 ฯลฯ)<br />
     </span>
 
-    <div class="mt-5 flex flex-col gap-5 w-[40rem]">
-      <img src="/project/dom.png" loading="lazy" />
+    <div class="mt-5 flex flex-col gap-5 w-full items-center">
+      <img src="/project/dom.png" loading="lazy" class="w-[40rem]" />
     </div>
   </div>
 </template>

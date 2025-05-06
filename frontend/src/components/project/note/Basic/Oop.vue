@@ -27,8 +27,8 @@
       แต่ไม่ต้องรู้ว่าภายในเครื่องยนต์ทำงานยังไง<br />
     </span>
 
-    <div class="mt-5 flex flex-col gap-5 w-[30rem]">
-      <img src="/project/oop.png" loading="lazy" />
+    <div class="mt-5 flex flex-col gap-5 w-full items-center">
+      <img src="/project/oop.png" loading="lazy" class="w-[30rem]" />
     </div>
   </div>
 </template>

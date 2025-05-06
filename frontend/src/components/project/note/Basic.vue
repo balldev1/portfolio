@@ -45,8 +45,8 @@
       <button
         @click="scrollTo('mvc')"
         :class="{
-          'bg-gray-500 text-white': activeSection === 'oop',
-          'bg-white': activeSection !== 'oop',
+          'bg-gray-500 text-white': activeSection === 'mvc',
+          'bg-white': activeSection !== 'mvc',
         }"
         class="btn btn-sm border-none text-black rounded m-1 hover:bg-gray-500 hover:text-white"
       >
