@@ -3,7 +3,7 @@
     <!-- เนื้อหาหลัก -->
     <div class="flex-1 flex flex-col gap-4 pb-10">
       <h1 class="text-4xl underline underline-offset-8 font-semibold">
-        Basicสรุปตามความเข้าใจ
+        Basicสรุปตามความเข้าใจtest
       </h1>
 
       <div ref="domRef"><Dom /></div>
