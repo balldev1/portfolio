@@ -1,7 +1,7 @@
 <template>
   <div class="flex gap-6 w-full">
     <!-- เนื้อหาหลัก -->
-    <div class="flex-1 flex flex-col gap-4">
+    <div class="flex-1 flex flex-col gap-4 pb-10">
       <h1 class="text-4xl underline underline-offset-8 font-semibold">
         Basic สรุปตามความเข้าใจ
       </h1>
@@ -12,6 +12,10 @@
 
       <div ref="oopRef">
         <Oop />
+      </div>
+
+      <div ref="mvcRef">
+        <Mvc />
       </div>
     </div>
 
@@ -38,6 +42,16 @@
       >
         oop
       </button>
+      <button
+        @click="scrollTo('mvc')"
+        :class="{
+          'bg-gray-500 text-white': activeSection === 'oop',
+          'bg-white': activeSection !== 'oop',
+        }"
+        class="btn btn-sm border-none text-black rounded m-1 hover:bg-gray-500 hover:text-white"
+      >
+        Mvc
+      </button>
     </div>
   </div>
 </template>
@@ -46,21 +60,25 @@
 import { ref } from "vue";
 import Dom from "./Basic/Dom.vue";
 import Oop from "./Basic/Oop.vue";
+import Mvc from "./Basic/Mvc.vue";
 
 // ตัวแปรเดียวใช้เก็บ section ที่ active
-const activeSection = ref<"dom" | "oop" | null>(null);
+const activeSection = ref<"dom" | "oop" | "mvc" | null>(null);
 
 // refs สำหรับการเลื่อน
 const domRef = ref<HTMLElement | null>(null);
 const oopRef = ref<HTMLElement | null>(null);
+const mvcRef = ref<HTMLElement | null>(null);
 
 // ฟังก์ชันรวม
-const scrollTo = (section: "dom" | "oop") => {
+const scrollTo = (section: "dom" | "oop" | "mvc") => {
   activeSection.value = section;
   if (section === "dom") {
     domRef.value?.scrollIntoView({ behavior: "smooth" });
   } else if (section === "oop") {
     oopRef.value?.scrollIntoView({ behavior: "smooth" });
+  } else if (section === "mvc") {
+    mvcRef.value?.scrollIntoView({ behavior: "smooth" });
   }
 };
 </script>
