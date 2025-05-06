@@ -3,7 +3,7 @@
     <!-- เนื้อหาหลัก -->
     <div class="flex-1 flex flex-col gap-4 pb-10">
       <h1 class="text-4xl underline underline-offset-8 font-semibold">
-        Basicสรุปตามความเข้าใจtest
+        Basicสรุปตามความเข้าใจ
       </h1>
 
       <div ref="domRef"><Dom /></div>
@@ -11,6 +11,7 @@
       <div ref="mvcRef"><Mvc /></div>
       <div ref="lifecycleRef"><Lifecycle /></div>
       <div ref="propsemitRef"><Propsemit /></div>
+      test
     </div>
 
     <!-- เมนู sticky -->

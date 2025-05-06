@@ -15,7 +15,7 @@
       เอาข้อมูลมาใช้<br />
       vue ไม่มี SSR/SEO SSR (Server-Side Rendering) คือการ "เรนเดอร์ HTML
       บนเซิร์ฟเวอร์" <br />
-      ก่อนส่งให้เบราว์เซอร์ nuxt มี ช่วยให้เว็บติดอันดับseo
+      ก่อนส่งให้เบราว์เซอร์ nuxt มี ช่วยให้เว็บติดอันดับ seo
     </span>
 
     <div class="mt-5 flex flex-col gap-5 w-full items-center">
