@@ -11,7 +11,7 @@
       <div ref="mvcRef"><Mvc /></div>
       <div ref="lifecycleRef"><Lifecycle /></div>
       <div ref="propsemitRef"><Propsemit /></div>
-      test
+      <div ref="vuenuxtRef"><Vuenuxt /></div>
     </div>
 
     <!-- เมนู sticky -->
@@ -39,8 +39,15 @@ import Oop from "./Basic/Oop.vue";
 import Mvc from "./Basic/Mvc.vue";
 import Lifecycle from "./Basic/lifecycle.vue";
 import Propsemit from "./Basic/Propsemit.vue";
+import Vuenuxt from "./Basic/Vuenuxt.vue";
 
-type SectionName = "dom" | "oop" | "mvc" | "lifecycle" | "propsemit";
+type SectionName =
+  | "dom"
+  | "oop"
+  | "mvc"
+  | "lifecycle"
+  | "propsemit"
+  | "vuenuxt";
 const activeSection = ref<SectionName | null>(null);
 
 const refsMap: Record<SectionName, any> = {
@@ -49,6 +56,7 @@ const refsMap: Record<SectionName, any> = {
   mvc: ref<HTMLElement | null>(null),
   lifecycle: ref<HTMLElement | null>(null),
   propsemit: ref<HTMLElement | null>(null),
+  vuenuxt: ref<HTMLElement | null>(null),
 };
 
 const sections: { name: SectionName; label: string }[] = [
@@ -57,6 +65,7 @@ const sections: { name: SectionName; label: string }[] = [
   { name: "mvc", label: "MVC" },
   { name: "lifecycle", label: "Lifecycle" },
   { name: "propsemit", label: "Propsemit" },
+  { name: "vuenuxt", label: "vuenuxt" },
 ];
 
 const scrollTo = (section: SectionName) => {
@@ -69,4 +78,5 @@ const oopRef = refsMap.oop;
 const mvcRef = refsMap.mvc;
 const lifecycleRef = refsMap.lifecycle;
 const propsemitRef = refsMap.propsemit;
+const vuenuxtRef = refsMap.vuenuxt;
 </script>
