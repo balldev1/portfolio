@@ -6,51 +6,26 @@
         Basic สรุปตามความเข้าใจ
       </h1>
 
-      <div ref="domRef">
-        <Dom />
-      </div>
-
-      <div ref="oopRef">
-        <Oop />
-      </div>
-
-      <div ref="mvcRef">
-        <Mvc />
-      </div>
+      <div ref="domRef"><Dom /></div>
+      <div ref="oopRef"><Oop /></div>
+      <div ref="mvcRef"><Mvc /></div>
+      <div ref="lifecycleRef"><Lifecycle /></div>
+      <div ref="propsemitRef"><Propsemit /></div>
     </div>
 
     <!-- เมนู sticky -->
     <div class="w-60 p-2 sticky pl-5 top-24 self-start">
       <button
-        @click="scrollTo('dom')"
+        v-for="section in sections"
+        :key="section.name"
+        @click="scrollTo(section.name as SectionName)"
         :class="{
-          'bg-gray-500 text-white': activeSection === 'dom',
-          'bg-white': activeSection !== 'dom',
+          'bg-gray-500 text-white': activeSection === section.name,
+          'bg-white': activeSection !== section.name,
         }"
         class="btn btn-sm border-none text-black rounded m-1 hover:bg-gray-500 hover:text-white"
       >
-        dom
-      </button>
-
-      <button
-        @click="scrollTo('oop')"
-        :class="{
-          'bg-gray-500 text-white': activeSection === 'oop',
-          'bg-white': activeSection !== 'oop',
-        }"
-        class="btn btn-sm border-none text-black rounded m-1 hover:bg-gray-500 hover:text-white"
-      >
-        oop
-      </button>
-      <button
-        @click="scrollTo('mvc')"
-        :class="{
-          'bg-gray-500 text-white': activeSection === 'mvc',
-          'bg-white': activeSection !== 'mvc',
-        }"
-        class="btn btn-sm border-none text-black rounded m-1 hover:bg-gray-500 hover:text-white"
-      >
-        Mvc
+        {{ section.label }}
       </button>
     </div>
   </div>
@@ -61,26 +36,36 @@ import { ref } from "vue";
 import Dom from "./Basic/Dom.vue";
 import Oop from "./Basic/Oop.vue";
 import Mvc from "./Basic/Mvc.vue";
+import Lifecycle from "./Basic/lifecycle.vue";
+import Propsemit from "./Basic/Propsemit.vue";
 
-// ตัวแปรเดียวใช้เก็บ section ที่ active
-const activeSection = ref<"dom" | "oop" | "mvc" | null>(null);
+type SectionName = "dom" | "oop" | "mvc" | "lifecycle" | "propsemit";
+const activeSection = ref<SectionName | null>(null);
 
-// refs สำหรับการเลื่อน
-const domRef = ref<HTMLElement | null>(null);
-const oopRef = ref<HTMLElement | null>(null);
-const mvcRef = ref<HTMLElement | null>(null);
-
-// ฟังก์ชันรวม
-const scrollTo = (section: "dom" | "oop" | "mvc") => {
-  activeSection.value = section;
-  if (section === "dom") {
-    domRef.value?.scrollIntoView({ behavior: "smooth" });
-  } else if (section === "oop") {
-    oopRef.value?.scrollIntoView({ behavior: "smooth" });
-  } else if (section === "mvc") {
-    mvcRef.value?.scrollIntoView({ behavior: "smooth" });
-  }
+const refsMap: Record<SectionName, any> = {
+  dom: ref<HTMLElement | null>(null),
+  oop: ref<HTMLElement | null>(null),
+  mvc: ref<HTMLElement | null>(null),
+  lifecycle: ref<HTMLElement | null>(null),
+  propsemit: ref<HTMLElement | null>(null),
 };
-</script>
 
-<style scoped></style>
+const sections: { name: SectionName; label: string }[] = [
+  { name: "dom", label: "Dom" },
+  { name: "oop", label: "OOP" },
+  { name: "mvc", label: "MVC" },
+  { name: "lifecycle", label: "Lifecycle" },
+  { name: "propsemit", label: "Propsemit" },
+];
+
+const scrollTo = (section: SectionName) => {
+  activeSection.value = section;
+  refsMap[section].value?.scrollIntoView({ behavior: "smooth" });
+};
+
+const domRef = refsMap.dom;
+const oopRef = refsMap.oop;
+const mvcRef = refsMap.mvc;
+const lifecycleRef = refsMap.lifecycle;
+const propsemitRef = refsMap.propsemit;
+</script>
