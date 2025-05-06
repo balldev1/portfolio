@@ -65,7 +65,7 @@ const sections: { name: SectionName; label: string }[] = [
   { name: "mvc", label: "MVC" },
   { name: "lifecycle", label: "Lifecycle" },
   { name: "propsemit", label: "Propsemit" },
-  { name: "vuenuxt", label: "vuenuxt" },
+  { name: "vuenuxt", label: "vue vs nuxt" },
 ];
 
 const scrollTo = (section: SectionName) => {
