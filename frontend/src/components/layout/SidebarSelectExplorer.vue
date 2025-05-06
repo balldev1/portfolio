@@ -132,6 +132,11 @@ const items = computed(() => [
         icon: "pi pi-hashtag",
         items: [
           {
+            label: "Basic",
+            icon: "pi pi-code ",
+            route: "/basic",
+          },
+          {
             label: "Spring_Boot_Api",
             icon: "pi pi-code",
             route: "/springboot",
@@ -140,10 +145,6 @@ const items = computed(() => [
             label: "Rust_auth",
             icon: "pi pi-code",
             route: "/rustauth",
-          },
-          {
-            label: "Video",
-            icon: "pi pi-code ",
           },
         ],
       },

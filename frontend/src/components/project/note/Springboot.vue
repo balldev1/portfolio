@@ -4,7 +4,9 @@
       Spring boot
     </h1>
 
-    <span class="text-gray-300 text-sm text-balance mt-2">
+    <span
+      class="text-gray-300 text-sm text-balance mt-2 badge p-4 shadow shadow-gray-500"
+    >
       สรุปตามความเข้าใจ
     </span>
 
