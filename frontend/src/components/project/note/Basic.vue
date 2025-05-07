@@ -19,7 +19,7 @@
     </div>
 
     <!-- เมนู sticky -->
-    <div class="w-80 sticky top-24 self-start tect-balance">
+    <div class="w-80 sticky top-24 self-start -balance">
       <button
         v-for="section in sections"
         :key="section.name"
@@ -28,7 +28,7 @@
           'bg-gray-500 text-white': activeSection === section.name,
           'bg-white': activeSection !== section.name,
         }"
-        class="btn btn-sm border-none text-black rounded m-1 hover:bg-gray-500 hover:text-white"
+        class="btn btn-sm border-none text-black rounded m-1 hover:bg-gray-500 hover:text-white uppercase"
       >
         {{ section.label }}
       </button>
