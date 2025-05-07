@@ -14,10 +14,12 @@
       <div ref="vuenuxtRef"><Vuenuxt /></div>
       <div ref="jqueryvueRef"><Jqueryvue /></div>
       <div ref="vifvshowRef"><Vifvshow /></div>
+      <div ref="watch_computedRef"><Watch_computed /></div>
+      <div ref="sql_nosqlRef"><Sql_nosql /></div>
     </div>
 
     <!-- เมนู sticky -->
-    <div class="w-70 sticky top-24 self-start">
+    <div class="w-80 sticky top-24 self-start tect-balance">
       <button
         v-for="section in sections"
         :key="section.name"
@@ -44,6 +46,8 @@ import Propsemit from "./Basic/Propsemit.vue";
 import Vuenuxt from "./Basic/Vuenuxt.vue";
 import Jqueryvue from "./Basic/Jqueryvue.vue";
 import Vifvshow from "./Basic/Vifvshow.vue";
+import Watch_computed from "./Basic/Watch_computed.vue";
+import Sql_nosql from "./Basic/Sql_nosql.vue";
 
 type SectionName =
   | "dom"
@@ -53,7 +57,9 @@ type SectionName =
   | "propsemit"
   | "vuenuxt"
   | "jqueryvue"
-  | "vifvshow";
+  | "vifvshow"
+  | "watch_computed"
+  | "sql_nosql";
 const activeSection = ref<SectionName | null>(null);
 
 const refsMap: Record<SectionName, any> = {
@@ -65,6 +71,8 @@ const refsMap: Record<SectionName, any> = {
   vuenuxt: ref<HTMLElement | null>(null),
   jqueryvue: ref<HTMLElement | null>(null),
   vifvshow: ref<HTMLElement | null>(null),
+  watch_computed: ref<HTMLElement | null>(null),
+  sql_nosql: ref<HTMLElement | null>(null),
 };
 
 const sections: { name: SectionName; label: string }[] = [
@@ -76,6 +84,8 @@ const sections: { name: SectionName; label: string }[] = [
   { name: "vuenuxt", label: "vue | nuxt" },
   { name: "jqueryvue", label: "Jquery | Vue" },
   { name: "vifvshow", label: "v-if | v-show" },
+  { name: "watch_computed", label: "Watch | Computed" },
+  { name: "sql_nosql", label: "sql | nosql" },
 ];
 
 const scrollTo = (section: SectionName) => {
@@ -91,4 +101,6 @@ const propsemitRef = refsMap.propsemit;
 const vuenuxtRef = refsMap.vuenuxt;
 const jqueryvueRef = refsMap.jqueryvue;
 const vifvshowRef = refsMap.vifvshow;
+const watch_computedRef = refsMap.watch_computed;
+const sql_nosqlRef = refsMap.sql_nosql;
 </script>
