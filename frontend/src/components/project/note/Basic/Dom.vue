@@ -17,7 +17,8 @@
     </span>
 
     <div class="mt-5 flex flex-col gap-5 w-full items-center">
-      <img src="/project/dom.png" loading="lazy" class="w-[40rem]" />
+      <img src="/project/dom.png" loading="lazy" class="w-full h-96" />
     </div>
   </div>
+  <div className="divider "></div>
 </template>

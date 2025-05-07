@@ -12,10 +12,12 @@
       <div ref="lifecycleRef"><Lifecycle /></div>
       <div ref="propsemitRef"><Propsemit /></div>
       <div ref="vuenuxtRef"><Vuenuxt /></div>
+      <div ref="jqueryvueRef"><Jqueryvue /></div>
+      <div ref="vifvshowRef"><Vifvshow /></div>
     </div>
 
     <!-- เมนู sticky -->
-    <div class="w-60 p-2 sticky pl-5 top-24 self-start">
+    <div class="w-70 sticky top-24 self-start">
       <button
         v-for="section in sections"
         :key="section.name"
@@ -40,6 +42,8 @@ import Mvc from "./Basic/Mvc.vue";
 import Lifecycle from "./Basic/lifecycle.vue";
 import Propsemit from "./Basic/Propsemit.vue";
 import Vuenuxt from "./Basic/Vuenuxt.vue";
+import Jqueryvue from "./Basic/Jqueryvue.vue";
+import Vifvshow from "./Basic/Vifvshow.vue";
 
 type SectionName =
   | "dom"
@@ -47,7 +51,9 @@ type SectionName =
   | "mvc"
   | "lifecycle"
   | "propsemit"
-  | "vuenuxt";
+  | "vuenuxt"
+  | "jqueryvue"
+  | "vifvshow";
 const activeSection = ref<SectionName | null>(null);
 
 const refsMap: Record<SectionName, any> = {
@@ -57,6 +63,8 @@ const refsMap: Record<SectionName, any> = {
   lifecycle: ref<HTMLElement | null>(null),
   propsemit: ref<HTMLElement | null>(null),
   vuenuxt: ref<HTMLElement | null>(null),
+  jqueryvue: ref<HTMLElement | null>(null),
+  vifvshow: ref<HTMLElement | null>(null),
 };
 
 const sections: { name: SectionName; label: string }[] = [
@@ -64,8 +72,10 @@ const sections: { name: SectionName; label: string }[] = [
   { name: "oop", label: "OOP" },
   { name: "mvc", label: "MVC" },
   { name: "lifecycle", label: "Lifecycle" },
-  { name: "propsemit", label: "Propsemit" },
-  { name: "vuenuxt", label: "vue vs nuxt" },
+  { name: "propsemit", label: "Props | emit" },
+  { name: "vuenuxt", label: "vue | nuxt" },
+  { name: "jqueryvue", label: "Jquery | Vue" },
+  { name: "vifvshow", label: "v-if | v-show" },
 ];
 
 const scrollTo = (section: SectionName) => {
@@ -79,4 +89,6 @@ const mvcRef = refsMap.mvc;
 const lifecycleRef = refsMap.lifecycle;
 const propsemitRef = refsMap.propsemit;
 const vuenuxtRef = refsMap.vuenuxt;
+const jqueryvueRef = refsMap.jqueryvue;
+const vifvshowRef = refsMap.vifvshow;
 </script>
