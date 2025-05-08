@@ -18,6 +18,7 @@ import Basic from "@/views/Basic.vue";
 import Thinking from "@/views/Thinking.vue";
 import Cdn from "@/views/Cdn.vue";
 import Cache from "@/views/Cache.vue";
+import Load_balancer from "@/views/Load_balancer.vue";
 
 const routes = [
   { path: "/", component: Home },
@@ -38,6 +39,7 @@ const routes = [
   { path: "/thinking", component: Thinking },
   { path: "/cdn", component: Cdn },
   { path: "/cache", component: Cache },
+  { path: "/load_balancer", component: Load_balancer },
 ];
 
 const router = createRouter({

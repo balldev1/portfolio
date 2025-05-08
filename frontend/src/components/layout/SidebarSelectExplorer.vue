@@ -161,6 +161,11 @@ const items = computed(() => [
             icon: "pi pi-code",
             route: "/cache",
           },
+          {
+            label: "Load_balancer",
+            icon: "pi pi-code",
+            route: "/load_balancer",
+          },
         ],
       },
     ],
