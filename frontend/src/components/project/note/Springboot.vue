@@ -5,12 +5,12 @@
     </h1>
 
     <span
-      class="text-gray-300 text-sm text-balance mt-2 badge p-4 shadow shadow-gray-500"
+      class="text-gray-300 text-lg text-balance mt-2 badge p-4 shadow shadow-gray-500"
     >
       สรุปตามความเข้าใจ
     </span>
 
-    <span class="text-gray-300 text-sm text-balance">
+    <span class="text-gray-300 text-md text-balance">
       Entity กำหนดโครงสร้างของฐานข้อมูล<br /><br />
       Controller รับคำขอจาก client และส่งคำขอไปยัง service เพื่อประมวลผล
       <br /><br />

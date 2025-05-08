@@ -5,12 +5,12 @@
     </h1>
 
     <span
-      class="text-gray-300 text-sm text-balance mt-2 badge p-4 shadow shadow-gray-500"
+      class="text-gray-300 text-lg text-balance mt-2 badge p-4 shadow shadow-gray-500"
     >
       สรุปตามความเข้าใจ
     </span>
 
-    <span class="text-gray-300 text-sm text-balance">
+    <span class="text-gray-300 text-md text-balance">
       rust-auth-api/ <br />
       ├── Cargo.toml # ไฟล์ที่ใช้ในการกำหนด dependencies สำหรับโปรเจค Rust
       <br />
