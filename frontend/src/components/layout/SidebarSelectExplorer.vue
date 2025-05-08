@@ -137,6 +137,11 @@ const items = computed(() => [
             route: "/basic",
           },
           {
+            label: "Thinking",
+            icon: "pi pi-code ",
+            route: "/thinking",
+          },
+          {
             label: "Spring_Boot_Api",
             icon: "pi pi-code",
             route: "/springboot",
