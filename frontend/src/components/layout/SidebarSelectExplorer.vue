@@ -156,6 +156,11 @@ const items = computed(() => [
             icon: "pi pi-code",
             route: "/cdn",
           },
+          {
+            label: "Cache",
+            icon: "pi pi-code",
+            route: "/cache",
+          },
         ],
       },
     ],

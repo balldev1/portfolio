@@ -17,6 +17,7 @@ import Rustauth from "@/views/Rustauth.vue";
 import Basic from "@/views/Basic.vue";
 import Thinking from "@/views/Thinking.vue";
 import Cdn from "@/views/Cdn.vue";
+import Cache from "@/views/Cache.vue";
 
 const routes = [
   { path: "/", component: Home },
@@ -34,7 +35,9 @@ const routes = [
   { path: "/springboot", component: Springboot },
   { path: "/rustauth", component: Rustauth },
   { path: "/basic", component: Basic },
+  { path: "/thinking", component: Thinking },
   { path: "/cdn", component: Cdn },
+  { path: "/cache", component: Cache },
 ];
 
 const router = createRouter({
