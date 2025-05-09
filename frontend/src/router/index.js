@@ -20,6 +20,7 @@ import Cdn from "@/views/Cdn.vue";
 import Cache from "@/views/Cache.vue";
 import Load_balancer from "@/views/Load_balancer.vue";
 import Messagequeue from "@/views/Messagequeue.vue";
+import Pub_sub from "@/views/Pub_sub.vue";
 
 const routes = [
   { path: "/", component: Home },
@@ -42,6 +43,7 @@ const routes = [
   { path: "/cache", component: Cache },
   { path: "/load_balancer", component: Load_balancer },
   { path: "/messagequeue", component: Messagequeue },
+  { path: "/pub_sub", component: Pub_sub },
 ];
 
 const router = createRouter({
