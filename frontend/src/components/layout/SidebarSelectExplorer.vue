@@ -176,6 +176,11 @@ const items = computed(() => [
             icon: "pi pi-code",
             route: "/pub_sub",
           },
+          {
+            label: "Api_Protocols",
+            icon: "pi pi-code",
+            route: "/api_protocols",
+          },
         ],
       },
     ],
