@@ -31,7 +31,7 @@
       <div ref="setupRef">
         <div class="flex flex-col gap-4">
           <h2
-            class="text-gray-950 border-none uppercase text-balance mt-2 badge bg-white p-4 shadow-md shadow-gray-500"
+            class="text-gray-950 border-none text-balance mt-2 badge bg-white p-4 shadow-md shadow-gray-500"
           >
             script setup
           </h2>
@@ -46,7 +46,7 @@
       <div ref="vRef">
         <div class="flex flex-col gap-4">
           <h2
-            class="text-gray-950 border-none uppercase text-balance mt-2 badge bg-white p-4 shadow-md shadow-gray-500"
+            class="text-gray-950 border-none text-balance mt-2 badge bg-white p-4 shadow-md shadow-gray-500"
           >
             v-...
           </h2>
@@ -85,7 +85,7 @@
       <div ref="refRef">
         <div class="flex flex-col gap-4">
           <h2
-            class="text-gray-950 border-none uppercase text-balance mt-2 badge bg-white p-4 shadow-md shadow-gray-500"
+            class="text-gray-950 border-none text-balance mt-2 badge bg-white p-4 shadow-md shadow-gray-500"
           >
             ref()
           </h2>
@@ -100,7 +100,7 @@
       <div ref="computedRef">
         <div class="flex flex-col gap-4">
           <h2
-            class="text-gray-950 border-none uppercase text-balance mt-2 badge bg-white p-4 shadow-md shadow-gray-500"
+            class="text-gray-950 border-none text-balance mt-2 badge bg-white p-4 shadow-md shadow-gray-500"
           >
             computed()
           </h2>
@@ -112,11 +112,11 @@
         <div className="divider "></div>
       </div>
 
-      <!-- computed  -->
-      <div ref="computedRef">
+      <!-- watch  -->
+      <div ref="watchRef">
         <div class="flex flex-col gap-4">
           <h2
-            class="text-gray-950 border-none uppercase text-balance mt-2 badge bg-white p-4 shadow-md shadow-gray-500"
+            class="text-gray-950 border-none text-balance mt-2 badge bg-white p-4 shadow-md shadow-gray-500"
           >
             watch()
           </h2>
@@ -127,8 +127,39 @@
         </div>
         <div className="divider "></div>
       </div>
-    </div>
 
+      <!-- :class  -->
+      <div ref="classRef">
+        <div class="flex flex-col gap-4">
+          <h2
+            class="text-gray-950 border-none text-balance mt-2 badge bg-white p-4 shadow-md shadow-gray-500"
+          >
+            :class
+          </h2>
+          <h2 class="text-gray-300 leading-8">
+            ผูกเงื่อนไขเช่น tailwildcss :class="isActive ? 'bg-rose-500' :
+            'bg-black'" ก็คือ isActive = true bg แดง | false bg ดำ
+          </h2>
+        </div>
+        <div className="divider "></div>
+      </div>
+
+      <!-- :class  -->
+      <div ref="onMountedRef">
+        <div class="flex flex-col gap-4">
+          <h2
+            class="text-gray-950 border-none text-balance mt-2 badge bg-white p-4 shadow-md shadow-gray-500"
+          >
+            onMounted()
+          </h2>
+          <h2 class="text-gray-300 leading-8">
+            รอให้ DOM พร้อมก่อน พอเข้า DOM ฟังชั่นก็จะทำงาน เช่น เช่นเปิดหน้า
+            /product โหลดข้อมูลจาก API เมื่อเปิดหน้า
+          </h2>
+        </div>
+        <div className="divider "></div>
+      </div>
+    </div>
     <!-- เมนู sticky -->
     <div class="w-80 sticky top-24 self-start -balance">
       <button
@@ -139,7 +170,7 @@
           'bg-gray-500 text-white': activeSection === section.name,
           'bg-white': activeSection !== section.name,
         }"
-        class="btn btn-sm border-none text-black rounded m-1 hover:bg-gray-500 hover:text-white uppercase"
+        class="btn btn-sm border-none text-black rounded m-1 hover:bg-gray-500 hover:text-white"
       >
         {{ section.label }}
       </button>
@@ -150,7 +181,14 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-type SectionName = "setup" | "v" | "ref" | "computed" | "watch";
+type SectionName =
+  | "setup"
+  | "v"
+  | "ref"
+  | "computed"
+  | "watch"
+  | "class"
+  | "onmounted";
 
 const activeSection = ref<SectionName | null>(null);
 
@@ -160,6 +198,8 @@ const refsMap: Record<SectionName, any> = {
   ref: ref<HTMLElement | null>(null),
   computed: ref<HTMLElement | null>(null),
   watch: ref<HTMLElement | null>(null),
+  onmounted: ref<HTMLElement | null>(null),
+  class: ref<HTMLElement | null>(null),
 };
 
 const sections: { name: SectionName; label: string }[] = [
@@ -168,6 +208,8 @@ const sections: { name: SectionName; label: string }[] = [
   { name: "ref", label: "Ref()" },
   { name: "computed", label: "computed()" },
   { name: "watch", label: "watch()" },
+  { name: "onmounted", label: "onMounted()" },
+  { name: "class", label: ":class" },
 ];
 
 const scrollTo = (section: SectionName) => {
@@ -180,4 +222,6 @@ const vRef = refsMap.v;
 const refRef = refsMap.ref;
 const computedRef = refsMap.computed;
 const watchRef = refsMap.watch;
+const classRef = refsMap.class;
+const onMountedRef = refsMap.onmounted;
 </script>
