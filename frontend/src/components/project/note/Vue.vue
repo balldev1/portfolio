@@ -96,7 +96,37 @@
         <div className="divider "></div>
       </div>
 
-      <!-- <div ref="oopRef"><Oop /></div> -->
+      <!-- computed  -->
+      <div ref="computedRef">
+        <div class="flex flex-col gap-4">
+          <h2
+            class="text-gray-950 border-none uppercase text-balance mt-2 badge bg-white p-4 shadow-md shadow-gray-500"
+          >
+            computed()
+          </h2>
+          <h2 class="text-gray-300 leading-8">
+            computed() คือ ติดตามค่าแล้วเก็บ แคช
+            เมือค่าเปลี่ยนให้อัพเดทค่านั้นเช่น input
+          </h2>
+        </div>
+        <div className="divider "></div>
+      </div>
+
+      <!-- computed  -->
+      <div ref="computedRef">
+        <div class="flex flex-col gap-4">
+          <h2
+            class="text-gray-950 border-none uppercase text-balance mt-2 badge bg-white p-4 shadow-md shadow-gray-500"
+          >
+            watch()
+          </h2>
+          <h2 class="text-gray-300 leading-8">
+            watch() คือ เฝ้าดูค่าแล้วติดตามค่าที่ส่งมาแล้วทำบางอย่างเช่นปุ่ม
+            เปลี่ยนหน้า เมือกดหน้า 2 ให้ api ดึงข้อมูล หน้า 2 มา
+          </h2>
+        </div>
+        <div className="divider "></div>
+      </div>
     </div>
 
     <!-- เมนู sticky -->
@@ -120,7 +150,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-type SectionName = "setup" | "v" | "ref";
+type SectionName = "setup" | "v" | "ref" | "computed" | "watch";
 
 const activeSection = ref<SectionName | null>(null);
 
@@ -128,12 +158,16 @@ const refsMap: Record<SectionName, any> = {
   setup: ref<HTMLElement | null>(null),
   v: ref<HTMLElement | null>(null),
   ref: ref<HTMLElement | null>(null),
+  computed: ref<HTMLElement | null>(null),
+  watch: ref<HTMLElement | null>(null),
 };
 
 const sections: { name: SectionName; label: string }[] = [
   { name: "setup", label: "SETUP" },
-  { name: "v", label: "V" },
+  { name: "v", label: "V..." },
   { name: "ref", label: "Ref()" },
+  { name: "computed", label: "computed()" },
+  { name: "watch", label: "watch()" },
 ];
 
 const scrollTo = (section: SectionName) => {
@@ -144,6 +178,6 @@ const scrollTo = (section: SectionName) => {
 const setupRef = refsMap.setup;
 const vRef = refsMap.v;
 const refRef = refsMap.ref;
-
-refRef;
+const computedRef = refsMap.computed;
+const watchRef = refsMap.watch;
 </script>
