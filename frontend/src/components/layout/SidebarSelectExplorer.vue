@@ -137,6 +137,11 @@ const items = computed(() => [
             route: "/basic",
           },
           {
+            label: "Vue",
+            icon: "pi pi-code ",
+            route: "/vue",
+          },
+          {
             label: "Thinking",
             icon: "pi pi-code ",
             route: "/thinking",

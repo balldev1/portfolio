@@ -23,6 +23,7 @@ import Messagequeue from "@/views/Messagequeue.vue";
 import Pub_sub from "@/views/Pub_sub.vue";
 import Api_protocols from "@/views/Api_protocols.vue";
 import Dns from "@/views/Dns.vue";
+import Vue from "@/views/Vue.vue";
 
 const routes = [
   { path: "/", component: Home },
@@ -48,6 +49,7 @@ const routes = [
   { path: "/pub_sub", component: Pub_sub },
   { path: "/api_protocols", component: Api_protocols },
   { path: "/dns", component: Dns },
+  { path: "/vue", component: Vue },
 ];
 
 const router = createRouter({
