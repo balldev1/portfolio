@@ -159,7 +159,41 @@
         </div>
         <div className="divider "></div>
       </div>
+
+      <!-- Lifecycle Diagram  -->
+      <div ref="lifecycleRef">
+        <div class="flex flex-col gap-4">
+          <h2
+            class="text-gray-950 border-none text-balance mt-2 badge bg-white p-4 shadow-md shadow-gray-500"
+          >
+            Lifecycle Diagram
+          </h2>
+          <h2 class="text-gray-300 leading-8">
+            (onBeforeMount) ก่อน component จะ mount เข้า DOM (ยังไม่แสดงผล)
+            <br />
+            (onMounted) หลัง component ถูก mount แล้ว (DOM พร้อม) เช่น เรียก API
+            เมื่อ component โหลด
+            <br />
+            (onBeforeUpdate) ก่อน DOM จะอัปเดต (จากการเปลี่ยน reactive data)
+            (onMounted) เช่น ค่า ref เปลี่ยนจากเดิมเมือมีค่าเข้ามา
+            <br />
+            (onUpdated) หลัง DOM อัปเดตเสร็จแล้ว เช่น debug, console.log
+            เมื่อค่าเปลี่ยน
+            <br />
+            (onBeforeUnmount) ก่อน component จะถูกลบออกจาก DOM
+            <br />
+            (onUnmounted) หลัง component ถูกลบแล้ว เช่น cleanup event / timer
+            ลบค่าทุกอย่างออกจาก dom
+            <br />
+          </h2>
+        </div>
+        <div class="mt-5 flex flex-col gap-5 w-full items-center">
+          <img src="/project/lifecycle.png" loading="lazy" class="w-full" />
+        </div>
+        <div className="divider "></div>
+      </div>
     </div>
+
     <!-- เมนู sticky -->
     <div class="w-80 sticky top-24 self-start -balance">
       <button
@@ -188,7 +222,8 @@ type SectionName =
   | "computed"
   | "watch"
   | "class"
-  | "onmounted";
+  | "onmounted"
+  | "lifecycle";
 
 const activeSection = ref<SectionName | null>(null);
 
@@ -200,6 +235,7 @@ const refsMap: Record<SectionName, any> = {
   watch: ref<HTMLElement | null>(null),
   onmounted: ref<HTMLElement | null>(null),
   class: ref<HTMLElement | null>(null),
+  lifecycle: ref<HTMLElement | null>(null),
 };
 
 const sections: { name: SectionName; label: string }[] = [
@@ -210,6 +246,7 @@ const sections: { name: SectionName; label: string }[] = [
   { name: "watch", label: "watch()" },
   { name: "onmounted", label: "onMounted()" },
   { name: "class", label: ":class" },
+  { name: "lifecycle", label: "Lifecycle" },
 ];
 
 const scrollTo = (section: SectionName) => {
@@ -224,4 +261,5 @@ const computedRef = refsMap.computed;
 const watchRef = refsMap.watch;
 const classRef = refsMap.class;
 const onMountedRef = refsMap.onmounted;
+const lifecycleRef = refsMap.lifecycle;
 </script>
