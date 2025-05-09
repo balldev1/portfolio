@@ -42,6 +42,7 @@
         <div className="divider "></div>
       </div>
 
+      <!-- v -->
       <div ref="vRef">
         <div class="flex flex-col gap-4">
           <h2
@@ -80,6 +81,21 @@
         <div className="divider "></div>
       </div>
 
+      <!-- ref  -->
+      <div ref="refRef">
+        <div class="flex flex-col gap-4">
+          <h2
+            class="text-gray-950 border-none uppercase text-balance mt-2 badge bg-white p-4 shadow-md shadow-gray-500"
+          >
+            ref()
+          </h2>
+          <h2 class="text-gray-300 leading-8">
+            ref() = สร้างตัวแปรที่ Vue สามารถติดตามการเปลี่ยนแปลงได้ (reactive)
+          </h2>
+        </div>
+        <div className="divider "></div>
+      </div>
+
       <!-- <div ref="oopRef"><Oop /></div> -->
     </div>
 
@@ -104,18 +120,20 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-type SectionName = "setup" | "v";
+type SectionName = "setup" | "v" | "ref";
 
 const activeSection = ref<SectionName | null>(null);
 
 const refsMap: Record<SectionName, any> = {
   setup: ref<HTMLElement | null>(null),
   v: ref<HTMLElement | null>(null),
+  ref: ref<HTMLElement | null>(null),
 };
 
 const sections: { name: SectionName; label: string }[] = [
   { name: "setup", label: "SETUP" },
   { name: "v", label: "V" },
+  { name: "ref", label: "Ref()" },
 ];
 
 const scrollTo = (section: SectionName) => {
@@ -125,4 +143,7 @@ const scrollTo = (section: SectionName) => {
 
 const setupRef = refsMap.setup;
 const vRef = refsMap.v;
+const refRef = refsMap.ref;
+
+refRef;
 </script>
