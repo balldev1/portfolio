@@ -19,6 +19,7 @@ import Thinking from "@/views/Thinking.vue";
 import Cdn from "@/views/Cdn.vue";
 import Cache from "@/views/Cache.vue";
 import Load_balancer from "@/views/Load_balancer.vue";
+import Messagequeue from "@/views/Messagequeue.vue";
 
 const routes = [
   { path: "/", component: Home },
@@ -40,6 +41,7 @@ const routes = [
   { path: "/cdn", component: Cdn },
   { path: "/cache", component: Cache },
   { path: "/load_balancer", component: Load_balancer },
+  { path: "/messagequeue", component: Messagequeue },
 ];
 
 const router = createRouter({
