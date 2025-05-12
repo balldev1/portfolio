@@ -47,7 +47,12 @@
     </span>
 
     <div class="my-5 flex flex-col gap-5">
-      <img src="/project/api_protocols.webp" loading="lazy" class="" />
+      <img
+        src="/project/api_protocols.webp"
+        loading="lazy"
+        class=""
+        alt="api protocols"
+      />
     </div>
   </div>
 </template>

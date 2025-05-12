@@ -27,7 +27,12 @@
     </span>
 
     <div class="my-5 flex flex-col gap-5">
-      <img src="/project/load_balancer.jpg" loading="lazy" class="" />
+      <img
+        src="/project/load_balancer.jpg"
+        loading="lazy"
+        class=""
+        alt="load balancer"
+      />
     </div>
   </div>
 </template>

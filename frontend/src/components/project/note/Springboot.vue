@@ -32,9 +32,9 @@
     </span>
 
     <div class="mt-5 flex flex-col gap-5">
-      <img src="/project/springboot1.png" loading="lazy" />
-      <img src="/project/springboot2.png" loading="lazy" />
-      <img src="/project/springboot3.png" loading="lazy" />
+      <img src="/project/springboot1.png" loading="lazy" alt="springboot" />
+      <img src="/project/springboot2.png" loading="lazy" alt="springboot" />
+      <img src="/project/springboot3.png" loading="lazy" alt="springboot" />
     </div>
 
     <div class="py-5">

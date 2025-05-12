@@ -53,6 +53,7 @@
                       <img
                         :src="`https://flagcdn.com/w40/${slotProps.option.flag}.png`"
                         class="w-5 h-4 object-cover rounded-sm"
+                        alt="flagcdn"
                       />
                       <span>{{ slotProps.option.label }}</span>
                     </div>
@@ -68,6 +69,7 @@
                           )?.flag
                         }.png`"
                         class="w-5 h-4 object-cover rounded-sm"
+                        alt="flagcdn"
                       />
                       <span>
                         {{
@@ -117,6 +119,7 @@
                       <img
                         :src="`https://flagcdn.com/w40/${slotProps.option.flag}.png`"
                         class="w-5 h-4 object-cover rounded-sm"
+                        alt="flagcdn"
                       />
                       <span>{{ slotProps.option.label }}</span>
                     </div>

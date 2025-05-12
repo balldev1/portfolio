@@ -45,8 +45,8 @@
     </span>
 
     <div class="mt-5 flex flex-col gap-5">
-      <img src="/project/rustauth1.png" loading="lazy" />
-      <img src="/project/rustauth2.png" loading="lazy" />
+      <img src="/project/rustauth1.png" loading="lazy" alt="rust" />
+      <img src="/project/rustauth2.png" loading="lazy" alt="rust" />
     </div>
   </div>
 </template>

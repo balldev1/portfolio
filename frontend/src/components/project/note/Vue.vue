@@ -188,7 +188,12 @@
           </h2>
         </div>
         <div class="mt-5 flex flex-col gap-5 w-full items-center">
-          <img src="/project/lifecycle.png" loading="lazy" class="w-full" />
+          <img
+            src="/project/lifecycle.png"
+            loading="lazy"
+            class="w-full"
+            alt="lifecycle vue"
+          />
         </div>
         <div className="divider "></div>
       </div>

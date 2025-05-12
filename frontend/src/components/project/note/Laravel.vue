@@ -55,12 +55,13 @@
             ที่เข้ามายังแอปพลิเคชันก่อนจะถึง Controller เช่น
             ตรวจสอบว่าผู้ใช้ล็อกอินหรือยัง<br /><br />
             .env เก็บ config environment เช่น db , secertkey , URL<br /><br />
+            Cronjob Task Scheduling เช่น บันทึกข้อมูล db ทุก 8 โมงเช้า
           </h2>
         </div>
         <div className="divider "></div>
       </div>
 
-      <!-- feature  -->
+      <!-- lifecycleRef  -->
       <div ref="lifecycleRef">
         <div class="flex flex-col gap-4">
           <h2
@@ -94,7 +95,29 @@
           </h2>
         </div>
         <div class="my-5 flex flex-col gap-5">
-          <img src="/project/laravellifecycle.webp" loading="lazy" class="" />
+          <img
+            src="/project/laravellifecycle.webp"
+            loading="lazy"
+            class=""
+            alt="lifecyle laravel"
+          />
+        </div>
+        <div className="divider "></div>
+      </div>
+
+      <!-- Kernel  -->
+      <div ref="kernelRef">
+        <div class="flex flex-col gap-4">
+          <h2
+            class="text-gray-950 border-none text-balance mt-2 badge bg-white p-4 shadow-md shadow-gray-500"
+          >
+            Kernel
+          </h2>
+          <h2 class="text-gray-300 leading-8">
+            Kernel = คนควบคุมจราจรใน Laravel คอยบอกว่า request ต้องผ่านด่านไหน
+            (middleware) → แล้วไป route ใด → ถึง controller ไหน → แล้วส่ง
+            response กลับ
+          </h2>
         </div>
         <div className="divider "></div>
       </div>
@@ -121,18 +144,20 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-type SectionName = "feature" | "lifecycle";
+type SectionName = "feature" | "lifecycle" | "kernel";
 
 const activeSection = ref<SectionName | null>(null);
 
 const refsMap: Record<SectionName, any> = {
   feature: ref<HTMLElement | null>(null),
   lifecycle: ref<HTMLElement | null>(null),
+  kernel: ref<HTMLElement | null>(null),
 };
 
 const sections: { name: SectionName; label: string }[] = [
   { name: "feature", label: "Feature" },
   { name: "lifecycle", label: "Lifecycle" },
+  { name: "kernel", label: "Kernel" },
 ];
 
 const scrollTo = (section: SectionName) => {
@@ -142,4 +167,5 @@ const scrollTo = (section: SectionName) => {
 
 const featureRef = refsMap.feature;
 const lifecycleRef = refsMap.lifecycle;
+const kernelRef = refsMap.kernel;
 </script>

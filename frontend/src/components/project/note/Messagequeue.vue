@@ -27,7 +27,12 @@
     </span>
 
     <div class="my-5 flex flex-col gap-5">
-      <img src="/project/messagequeue.webp" loading="lazy" class="" />
+      <img
+        src="/project/messagequeue.webp"
+        loading="lazy"
+        class=""
+        alt="message queue"
+      />
     </div>
   </div>
 </template>

@@ -12,7 +12,12 @@
     </span>
 
     <div class="mt-5 flex flex-col gap-5 w-full items-center">
-      <img src="/project/propsemit.png" loading="lazy" class="w-full h-96" />
+      <img
+        src="/project/propsemit.png"
+        loading="lazy"
+        class="w-full h-96"
+        alt="props emit"
+      />
     </div>
   </div>
   <div className="divider "></div>

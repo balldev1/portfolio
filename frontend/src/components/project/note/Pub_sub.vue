@@ -25,7 +25,12 @@
     </span>
 
     <div class="my-5 flex flex-col gap-5">
-      <img src="/project/pub_sub.png" loading="lazy" class="" />
+      <img
+        src="/project/pub_sub.png"
+        loading="lazy"
+        class=""
+        alt="Publish (topic) / Subscribe (sub)"
+      />
     </div>
   </div>
 </template>

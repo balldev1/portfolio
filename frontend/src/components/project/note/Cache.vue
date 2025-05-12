@@ -26,7 +26,12 @@
     </span>
 
     <div class="my-5 flex flex-col gap-5">
-      <img src="/project/cache.png" loading="lazy" class="h-[60rem]" />
+      <img
+        src="/project/cache.png"
+        loading="lazy"
+        class="h-[60rem]"
+        alt="cache"
+      />
     </div>
   </div>
 </template>

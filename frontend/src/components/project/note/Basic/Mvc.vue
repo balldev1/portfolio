@@ -17,7 +17,12 @@
     </span>
 
     <div class="mt-5 flex flex-col gap-5 w-full items-center">
-      <img src="/project/mvc.jpg" loading="lazy" class="w-full h-96" />
+      <img
+        src="/project/mvc.jpg"
+        loading="lazy"
+        class="w-full h-96"
+        alt="vue"
+      />
     </div>
   </div>
   <div className="divider "></div>

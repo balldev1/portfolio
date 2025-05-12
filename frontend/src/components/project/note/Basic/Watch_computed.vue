@@ -19,6 +19,7 @@
         src="/project/watch_computed.jpeg"
         loading="lazy"
         class="w-full h-96"
+        alt="watch computed"
       />
     </div>
   </div>
