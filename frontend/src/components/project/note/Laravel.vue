@@ -69,7 +69,6 @@
             lifecycle
           </h2>
           <h2 class="text-gray-300 leading-8">
-            ขั้นตอนของ Laravel Lifecycle <br /><br />
             1. Request เข้า Laravel ผ่าน public/index.php<br /><br />
             2. Kernel ทำงาน HTTP Kernel รับคำขอเว็บและโหลด Middleware ต่าง ๆ
             <br /><br />
