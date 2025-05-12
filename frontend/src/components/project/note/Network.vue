@@ -150,20 +150,16 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-type SectionName = "basic" | "lifecycle" | "kernel";
+type SectionName = "basic";
 
 const activeSection = ref<SectionName | null>(null);
 
 const refsMap: Record<SectionName, any> = {
   basic: ref<HTMLElement | null>(null),
-  lifecycle: ref<HTMLElement | null>(null),
-  kernel: ref<HTMLElement | null>(null),
 };
 
 const sections: { name: SectionName; label: string }[] = [
   { name: "basic", label: "Basic" },
-  { name: "lifecycle", label: "Lifecycle" },
-  { name: "kernel", label: "Kernel" },
 ];
 
 const scrollTo = (section: SectionName) => {
@@ -172,6 +168,4 @@ const scrollTo = (section: SectionName) => {
 };
 
 const basicRef = refsMap.basic;
-const lifecycleRef = refsMap.lifecycle;
-const kernelRef = refsMap.kernel;
 </script>
