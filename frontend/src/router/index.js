@@ -28,8 +28,8 @@ import Laravel from "@/views/Laravel.vue";
 import Network from "@/views/Network.vue";
 
 const routes = [
-  { path: "/", component: Home },
-  { path: "/public", component: Public },
+  { path: "/", component: Public },
+  { path: "/public", component: Home },
   { path: "/wireless-guru", component: Wiress_guru },
   { path: "/ss-it", component: Ssit },
   { path: "/modern-network", component: Modernnetwork },
