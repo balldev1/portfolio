@@ -142,6 +142,11 @@ const items = computed(() => [
             route: "/vue",
           },
           {
+            label: "Laravel",
+            icon: "pi pi-code ",
+            route: "/laravel",
+          },
+          {
             label: "Thinking",
             icon: "pi pi-code ",
             route: "/thinking",

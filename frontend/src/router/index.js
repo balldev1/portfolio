@@ -24,6 +24,7 @@ import Pub_sub from "@/views/Pub_sub.vue";
 import Api_protocols from "@/views/Api_protocols.vue";
 import Dns from "@/views/Dns.vue";
 import Vue from "@/views/Vue.vue";
+import Laravel from "@/views/Laravel.vue";
 
 const routes = [
   { path: "/", component: Home },
@@ -50,6 +51,7 @@ const routes = [
   { path: "/api_protocols", component: Api_protocols },
   { path: "/dns", component: Dns },
   { path: "/vue", component: Vue },
+  { path: "/laravel", component: Laravel },
 ];
 
 const router = createRouter({
