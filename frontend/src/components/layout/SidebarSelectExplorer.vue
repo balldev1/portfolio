@@ -147,6 +147,11 @@ const items = computed(() => [
             route: "/laravel",
           },
           {
+            label: "Network",
+            icon: "pi pi-code ",
+            route: "/network",
+          },
+          {
             label: "Thinking",
             icon: "pi pi-code ",
             route: "/thinking",
