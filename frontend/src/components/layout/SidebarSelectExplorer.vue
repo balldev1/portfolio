@@ -92,6 +92,11 @@ const items = computed(() => [
             route: "/tr069",
           },
           {
+            label: t("report_repair"),
+            icon: "pi pi-twitch",
+            route: "/reportrepair",
+          },
+          {
             label: t("orderfood"),
             icon: "pi pi-twitch",
             route: "/orderfood",
