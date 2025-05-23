@@ -206,6 +206,11 @@ const items = computed(() => [
             icon: "pi pi-code",
             route: "/dns",
           },
+          {
+            label: "Seo_Next.js",
+            icon: "pi pi-code",
+            route: "/seonext",
+          },
         ],
       },
     ],

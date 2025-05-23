@@ -27,6 +27,7 @@ import Dns from "@/views/Dns.vue";
 import Vue from "@/views/Vue.vue";
 import Laravel from "@/views/Laravel.vue";
 import Network from "@/views/Network.vue";
+import SeoNext from "@/views/SeoNext.vue";
 
 const routes = [
   { path: "/", component: Public },
@@ -53,6 +54,7 @@ const routes = [
   { path: "/pub_sub", component: Pub_sub },
   { path: "/api_protocols", component: Api_protocols },
   { path: "/dns", component: Dns },
+  { path: "/seonext", component: SeoNext },
   { path: "/vue", component: Vue },
   { path: "/laravel", component: Laravel },
   { path: "/network", component: Network },
