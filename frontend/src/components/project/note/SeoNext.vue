@@ -15,18 +15,18 @@
     </span>
 
     <span>
-      preview local -> https://docs.srv.us/ -> เอาลิ้งที่ได้ไป browser ->
+      1. preview local -> https://docs.srv.us/ -> เอาลิ้งที่ได้ไป browser ->
       socialshare priviwe ตัวอย่างการแชร เพือดูว่าเวลา share
       รูปแบบเว็บขึ้นแบบไหนไหน
     </span>
 
     <span>
-      metadata -> กำหนด title , description , openGraph , ->
+      2. metadata -> กำหนด title , description , openGraph , ->
       ระบุว่าเว็บไซคเกี่ยวกับอะไร
     </span>
 
     <span>
-      metadata/{id} -> product/{id} , title , description , openGraph , ->
+      3. metadata/{id} -> product/{id} , title , description , openGraph , ->
       ระบุว่าแต่ละหน้าเว็บไซคเกี่ยวกับอะไร เช่น สินค้า mikrotik , cisco ให้แบ่ง
       title กัน
     </span>
@@ -41,7 +41,7 @@
     </div>
 
     <span>
-      cache -> import { cache } from "react"; ->
+      4. cache -> import { cache } from "react"; ->
       หน้าเว็บโหลดเร็วขึ้นเพราะไม่ต้องดึงข้อมูลหรือประมวลผลใหม่ทุกครั้ง ->
       <br />
       <br />
@@ -54,15 +54,15 @@
     >
 
     <span>
-      sitemap.xml แจ้งรายการ URL ทั้งหมดให้ Google มาเก็บข้อมูลหน้าไหน “สำคัญ"
-      กว่าหน้าอื่น → ด้วย priority หน้าไหนอัปเดตล่าสุดเมื่อไหร่ → ด้วย lastmod
-      ควรให้ Google มาแวะบ่อยแค่ไหน → ด้วย changefreq
+      5. sitemap.xml แจ้งรายการ URL ทั้งหมดให้ Google มาเก็บข้อมูลหน้าไหน
+      “สำคัญ" กว่าหน้าอื่น → ด้วย priority หน้าไหนอัปเดตล่าสุดเมื่อไหร่ → ด้วย
+      lastmod ควรให้ Google มาแวะบ่อยแค่ไหน → ด้วย changefreq
     </span>
 
     <span>
-      robot.ts ก็คือเรากำหนด sitemap แล้ววกำหนดให้bot google เข้าไปหาไฟล sitemap
-      ตามทีเรากำหนด เช่นให้ เข้าไปเก็บข้อมูลเฉพาะหน้า product แล้วเอา title
-      ,description ไป ช่วย seo ตาม keywork ที่พิม
+      6. robot.ts ก็คือเรากำหนด sitemap แล้ววกำหนดให้bot google เข้าไปหาไฟล
+      sitemap ตามทีเรากำหนด เช่นให้ เข้าไปเก็บข้อมูลเฉพาะหน้า product แล้วเอา
+      title ,description ไป ช่วย seo ตาม keywork ที่พิม
       <br />
       <br />
       index: false / no index ห้ามเอาหน้านี้ไปโชว์ใน Google follow: true
@@ -71,9 +71,9 @@
     </span>
 
     <span>
-      Google Search Console ไว้ติดตามผลใครมาจากไหนอะไรยังไง ไปเอาไฟลมาจาก google
-      แล้วมาใส่ ในเว็บเราจะแสดง สถิติต่างๆ และ keywork ที่พิม หรือ blacklink
-      ที่พามาเว็บเราใช้ในการแก้ไข seo <br />
+      7. Google Search Console ไว้ติดตามผลใครมาจากไหนอะไรยังไง ไปเอาไฟลมาจาก
+      google แล้วมาใส่ ในเว็บเราจะแสดง สถิติต่างๆ และ keywork ที่พิม หรือ
+      blacklink ที่พามาเว็บเราใช้ในการแก้ไข seo <br />
       https://search.google.com/search-console/about
     </span>
 
