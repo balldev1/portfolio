@@ -9,7 +9,9 @@
       ensure secure and organized access. Users can submit repair requests,
       track repair status in real time, and view detailed reports along with
       service history. An interactive dashboard displays usage data in graphical
-      form to help monitor system performance and technician workloads.
+      form to help monitor system performance and technician workloads. In
+      addition, the system securely logs all user activities in compliance with
+      the Computer Crime Act for audit and legal purposes.
     </span>
     <div class="w-full">
       <img src="/project/report1.webp" loading="lazy" alt="mikrotik" />
