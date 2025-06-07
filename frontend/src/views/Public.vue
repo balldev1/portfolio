@@ -30,7 +30,7 @@
       ผมพักอยู่พระราม 2 สามารถทำงาน ONSITE / WFH / HYBRID ได้ครับ
     </h1>
     <h1 class="px-10 text-gray-300 pt-5 text-md">
-      นันทวัฒน์ โคลา(บอล) 096-993-3302
+            นันทวัฒน์ โคลา(บอล) nanthawatcola1994@gmail.com
     </h1>
 
     <h1 class="px-10 text-gray-300 pt-5 text-md">ขอบคุณครับ</h1>
