@@ -31,6 +31,7 @@ import SeoNext from "@/views/SeoNext.vue";
 import StaticRoute from "@/views/StaticRoute.vue";
 import Packet from "@/views/Packet.vue";
 import Vlan from "@/views/Vlan.vue";
+import Trunk from "@/views/Trunk.vue";
 
 const routes = [
   { path: "/", component: Public },
@@ -64,6 +65,7 @@ const routes = [
   { path: "/staticroute", component: StaticRoute },
   { path: "/packet", component: Packet },
   { path: "/vlan", component: Vlan },
+  { path: "/Trunk", component: Trunk },
 ];
 
 const router = createRouter({
