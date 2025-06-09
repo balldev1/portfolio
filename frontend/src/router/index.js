@@ -28,6 +28,9 @@ import Vue from "@/views/Vue.vue";
 import Laravel from "@/views/Laravel.vue";
 import Network from "@/views/Network.vue";
 import SeoNext from "@/views/SeoNext.vue";
+import StaticRoute from "@/views/StaticRoute.vue";
+import Packet from "@/views/Packet.vue";
+import Vlan from "@/views/Vlan.vue";
 
 const routes = [
   { path: "/", component: Public },
@@ -58,6 +61,9 @@ const routes = [
   { path: "/vue", component: Vue },
   { path: "/laravel", component: Laravel },
   { path: "/network", component: Network },
+  { path: "/staticroute", component: StaticRoute },
+  { path: "/packet", component: Packet },
+  { path: "/vlan", component: Vlan },
 ];
 
 const router = createRouter({

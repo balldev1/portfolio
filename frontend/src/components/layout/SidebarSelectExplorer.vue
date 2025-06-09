@@ -211,6 +211,21 @@ const items = computed(() => [
             icon: "pi pi-code",
             route: "/seonext",
           },
+          {
+            label: "Dynamic Static",
+            icon: "pi pi-code",
+            route: "/staticroute",
+          },
+          {
+            label: "Packet Payload",
+            icon: "pi pi-code",
+            route: "/packet",
+          },
+          {
+            label: "Vlan",
+            icon: "pi pi-code",
+            route: "/vlan",
+          },
         ],
       },
     ],
