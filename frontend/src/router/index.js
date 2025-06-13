@@ -32,6 +32,9 @@ import StaticRoute from "@/views/StaticRoute.vue";
 import Packet from "@/views/Packet.vue";
 import Vlan from "@/views/Vlan.vue";
 import Trunk from "@/views/Trunk.vue";
+import SpanningTree from "@/views/SpanningTree.vue";
+import Failover from "@/views/Failover.vue";
+import ComputerArchitecture from "@/views/ComputerArchitecture.vue";
 
 const routes = [
   { path: "/", component: Public },
@@ -65,7 +68,10 @@ const routes = [
   { path: "/staticroute", component: StaticRoute },
   { path: "/packet", component: Packet },
   { path: "/vlan", component: Vlan },
-  { path: "/Trunk", component: Trunk },
+  { path: "/trunk", component: Trunk },
+  { path: "/spanningtree", component: SpanningTree },
+  { path: "/failover", component: Failover },
+  { path: "/computerarchitecture", component: ComputerArchitecture },
 ];
 
 const router = createRouter({

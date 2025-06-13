@@ -142,6 +142,11 @@ const items = computed(() => [
             route: "/basic",
           },
           {
+            label: "Architecture",
+            icon: "pi pi-code ",
+            route: "/computerarchitecture",
+          },
+          {
             label: "Vue",
             icon: "pi pi-code ",
             route: "/vue",
@@ -230,6 +235,16 @@ const items = computed(() => [
             label: "Trunk",
             icon: "pi pi-code",
             route: "/trunk",
+          },
+          {
+            label: "SpanningTree",
+            icon: "pi pi-code",
+            route: "/spanningtree",
+          },
+          {
+            label: "Failover",
+            icon: "pi pi-code",
+            route: "/failover",
           },
         ],
       },

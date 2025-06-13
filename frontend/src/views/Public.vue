@@ -30,7 +30,7 @@
       ผมพักอยู่พระราม 2 สามารถทำงาน ONSITE / WFH / HYBRID ได้ครับ
     </h1>
     <h1 class="px-10 text-gray-300 pt-5 text-md">
-            นันทวัฒน์ โคลา(บอล) nanthawatcola1994@gmail.com
+      นันทวัฒน์ โคลา(บอล) nanthawatcola1994@gmail.com
     </h1>
 
     <h1 class="px-10 text-gray-300 pt-5 text-md">ขอบคุณครับ</h1>
@@ -49,6 +49,30 @@
 </template>
 
 <script setup>
+import { onMounted } from "vue";
 // สร้าง array ของรูปภาพแบบอัตโนมัติถึง /modern/22.jpg
 const images = Array.from({ length: 33 }, (_, i) => `/modern/${i + 1}.jpg`);
+
+onMounted(async () => {
+  const res = await fetch("https://ipapi.co/json/");
+  const data = await res.json();
+  console.log("res", res);
+  console.log("data", data);
+
+  const logData = {
+    ip: data.ip,
+    city: data.city,
+    region: data.region,
+    country: data.country_name,
+    timezone: data.timezone,
+    datetime: new Date().toISOString(),
+    userAgent: navigator.userAgent,
+  };
+
+  await fetch("/api/log-ip", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(logData),
+  });
+});
 </script>
