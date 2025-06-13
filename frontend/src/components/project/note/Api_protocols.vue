@@ -56,3 +56,14 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { useSeo } from "@/composables/useSeo.js";
+
+useSeo({
+  title: "Api Protocols",
+  description: "REST,GraphQL,gRPC,WebSockets",
+  keywords: "REST,GraphQL,gRPC,WebSockets",
+  url: "https://portfolio-frontend-ten-steel.vercel.app/",
+});
+</script>

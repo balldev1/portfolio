@@ -146,9 +146,9 @@
     </div>
   </div>
 </template>
-
 <script setup lang="ts">
 import { ref } from "vue";
+import { useSeo } from "@/composables/useSeo.js";
 
 type SectionName = "basic";
 
@@ -168,4 +168,11 @@ const scrollTo = (section: SectionName) => {
 };
 
 const basicRef = refsMap.basic;
+
+useSeo({
+  title: "Network",
+  description: "OSI Model (7 Layer)",
+  keywords: "Network",
+  url: "https://portfolio-frontend-ten-steel.vercel.app/",
+});
 </script>

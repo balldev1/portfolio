@@ -36,3 +36,14 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { useSeo } from "@/composables/useSeo.js";
+
+useSeo({
+  title: "Load balancer",
+  description: "Load balancer,Server,web",
+  keywords: "Load balancer",
+  url: "https://portfolio-frontend-ten-steel.vercel.app/",
+});
+</script>

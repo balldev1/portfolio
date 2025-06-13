@@ -24,3 +24,14 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { useSeo } from "@/composables/useSeo.js";
+
+useSeo({
+  title: "network,trunk",
+  description: "network,trunk",,
+  keywords: "network,trunk",,
+  url: "https://portfolio-frontend-ten-steel.vercel.app/",
+});
+</script>

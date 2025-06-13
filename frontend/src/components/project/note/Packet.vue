@@ -38,3 +38,14 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { useSeo } from "@/composables/useSeo.js";
+
+useSeo({
+  title: "Networks , Packet",
+  description: "Networks, Packet",
+  keywords: "Networks ,Packet",
+  url: "https://portfolio-frontend-ten-steel.vercel.app/",
+});
+</script>

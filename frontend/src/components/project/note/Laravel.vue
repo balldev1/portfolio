@@ -143,6 +143,7 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
+import { useSeo } from "@/composables/useSeo.js";
 
 type SectionName = "feature" | "lifecycle" | "kernel";
 
@@ -168,4 +169,11 @@ const scrollTo = (section: SectionName) => {
 const featureRef = refsMap.feature;
 const lifecycleRef = refsMap.lifecycle;
 const kernelRef = refsMap.kernel;
+
+useSeo({
+  title: "Laravel",
+  description: "Laravel,MVC Architecture (Model–View–Controller ",
+  keywords: "Laravel",
+  url: "https://portfolio-frontend-ten-steel.vercel.app/",
+});
 </script>

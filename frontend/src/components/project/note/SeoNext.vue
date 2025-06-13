@@ -89,3 +89,14 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { useSeo } from "@/composables/useSeo.js";
+
+useSeo({
+  title: "Next.js",
+  description: "Next.js seo",
+  keywords: "Next.js seo",
+  url: "https://portfolio-frontend-ten-steel.vercel.app/",
+});
+</script>

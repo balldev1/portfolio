@@ -64,6 +64,7 @@
 </template>
 
 <script setup>
+import { useSeo } from "@/composables/useSeo.js";
 import { ref, onMounted } from "vue";
 import axios from "axios";
 import ModalEditContent from "./ModalEditNote.vue";
@@ -98,5 +99,12 @@ const formatDate = (dateString) => {
 
 onMounted(() => {
   // fetchPosts();
+});
+
+useSeo({
+  title: "Note",
+  description: "Note",
+  keywords: "Note",
+  url: "https://portfolio-frontend-ten-steel.vercel.app/",
 });
 </script>

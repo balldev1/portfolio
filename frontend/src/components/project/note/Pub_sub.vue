@@ -34,3 +34,14 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { useSeo } from "@/composables/useSeo.js";
+
+useSeo({
+  title: "Publish (topic) / Subscribe (sub)",
+  description: "Publish (topic) / Subscribe (sub)",
+  keywords: "Publish (topic) / Subscribe (sub)",
+  url: "https://portfolio-frontend-ten-steel.vercel.app/",
+});
+</script>

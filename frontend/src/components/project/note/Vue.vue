@@ -219,6 +219,7 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
+import { useSeo } from "@/composables/useSeo.js";
 
 type SectionName =
   | "setup"
@@ -267,4 +268,12 @@ const watchRef = refsMap.watch;
 const classRef = refsMap.class;
 const onMountedRef = refsMap.onmounted;
 const lifecycleRef = refsMap.lifecycle;
+
+
+useSeo({
+  title: "vue",
+  description: "vue",,
+  keywords: "vue",,
+  url: "https://portfolio-frontend-ten-steel.vercel.app/",
+});
 </script>

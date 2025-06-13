@@ -35,3 +35,14 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { useSeo } from "@/composables/useSeo.js";
+
+useSeo({
+  title: "Cache memory concept application",
+  description: "Cache,Client,Server",
+  keywords: "Cache,Client,Server",
+  url: "https://portfolio-frontend-ten-steel.vercel.app/",
+});
+</script>

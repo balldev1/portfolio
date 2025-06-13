@@ -50,3 +50,14 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { useSeo } from "@/composables/useSeo.js";
+
+useSeo({
+  title: "Rust",
+  description: "Rust",
+  keywords: "Rust",
+  url: "https://portfolio-frontend-ten-steel.vercel.app/",
+});
+</script>

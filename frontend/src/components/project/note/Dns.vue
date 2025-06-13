@@ -32,3 +32,14 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { useSeo } from "@/composables/useSeo.js";
+
+useSeo({
+  title: "Domain Name System",
+  description: "Domain Name System,dns,Server",
+  keywords: "Domain Name System",
+  url: "https://portfolio-frontend-ten-steel.vercel.app/",
+});
+</script>
