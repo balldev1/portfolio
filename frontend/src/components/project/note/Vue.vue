@@ -269,11 +269,10 @@ const classRef = refsMap.class;
 const onMountedRef = refsMap.onmounted;
 const lifecycleRef = refsMap.lifecycle;
 
-
 useSeo({
   title: "vue",
-  description: "vue",,
-  keywords: "vue",,
+  description: "vue",
+  keywords: "vue",
   url: "https://portfolio-frontend-ten-steel.vercel.app/",
 });
 </script>
