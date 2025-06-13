@@ -11,4 +11,9 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
+  // server: {
+  //   allowedHosts: ["laf66s4pu33swcw7cbdtgbquf4.srv.us"], // ✅ เพิ่ม host ที่อนุญาต
+  //   host: true,
+  //   port: 5173,
+  // },
 });
