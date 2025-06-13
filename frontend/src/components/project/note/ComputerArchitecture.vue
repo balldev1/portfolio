@@ -165,3 +165,14 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { useSeo } from "@/composables/useSeo.js";
+
+useSeo({
+  title: "Computer Architecture",
+  description: "CPU,Register,Memory,Instruction Set",
+  keywords: "Computer Architecture",
+  url: "https://portfolio-frontend-ten-steel.vercel.app/",
+});
+</script>

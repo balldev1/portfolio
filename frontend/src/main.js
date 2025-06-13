@@ -1,6 +1,7 @@
 import "./assets/main.css";
 
 import { createApp } from "vue";
+import { createHead } from "@vueuse/head";
 import App from "./App.vue";
 import router from "@/router/index";
 import { createPinia } from "pinia";
@@ -10,6 +11,8 @@ import "primevue/resources/themes/lara-light-indigo/theme.css";
 import "primeicons/primeicons.css";
 const pinia = createPinia();
 const app = createApp(App);
+const head = createHead();
+
 app.use(i18n);
 app.use(router);
 app.use(pinia);
