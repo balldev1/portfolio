@@ -50,15 +50,6 @@
       (ควบคุมการไหลของโปรแกรม)
     </span>
 
-    <div class="my-5 flex flex-col gap-5">
-      <img
-        src="/project/computerarchitecture.webp"
-        loading="lazy"
-        class="h-96"
-        alt="computerarchitecture"
-      />
-    </div>
-
     <span class="text-gray-300 text-md text-balance">
       - ระบบปฎิบัติการ Scalar Processor ทำงานทีละข้อมูลทีละคำสั่ง (ทีละตัว)
       งานทั่วไปที่ต้องการความแม่นยำทีละค่า เช่น โปรแกรมพื้นฐาน <br />
@@ -92,7 +83,75 @@
       → ผลลัพธ์จะถูกเก็บหรือส่งออก → CPU อ่านคำสั่งถัดไป → ทำซ้ำ
       <br />
       <br />
+      โครงสร้างคอมพิวเตอร์ 4 ส่วนสำคัญ <br />CPU สมองของคอมพิวเตอร์
+      ทำหน้าที่ประมวลผลคำสั่ง,<br />
+      Memory เช่น RAM, Cache, และ Storage (ฮาร์ดดิสก์, SSD), <br />
+      Input อุปกรณ์ที่รับข้อมูลเข้าสู่คอมพิวเตอร์ เช่น คีย์บอร์ด เมาส์ กล้อง ,
+      <br />
+      Output อุปกรณ์ที่แสดงผลลัพธ์จากการประมวลผล เช่น หน้าจอ พรินเตอร์ ลำโพง
     </span>
+
+    <span class="text-gray-300 text-md text-balance">
+      - วงรอบคำสั่ง CPU (Instruction Cycle)
+      <br />
+      <br />
+      Fetch (ดึงคำสั่ง) ไปเอาคำสั่งจากหน่วยความจำ เช่น เลข 1010
+      <br />
+      Decode (ถอดรหัสคำสั่ง) CPU ถอดรหัส 1010 ใน IR ว่าต้องทำอะไร เช่น บวก ลบ
+      หรือโหลดข้อมูล
+      <br />
+      Execute (ประมวลผลคำสั่ง) ทำงานตามคำสั่ง เช่น คำนวณใน ALU
+      หรืออ่าน/เขียนข้อมูลในหน่วยความจำ
+      <br />
+      Store/Write back (เก็บผลลัพธ์)
+      ผลลัพธ์จากการประมวลผลอาจถูกเก็บในรีจิสเตอร์หรือหน่วยความจำ
+      <br />
+      Update PC (อัปเดต Program Counter) ปรับค่า PC ให้ชี้ไปยังคำสั่งถัดไป
+      เพื่อเตรียม Fetch รอบใหม่
+    </span>
+
+    <span class="text-gray-300 text-md text-balance">
+      - System Bus (Address, Data, Control) จะถูกใช้งานในแต่ละรอบของ Instruction
+      Cycle (วงรอบคำสั่งของ CPU) โดยเฉพาะใน ขั้นตอน Fetch, Execute, Store
+      <br />
+      <br />
+      Address Bus (บัสที่อยู่) = บอกตำแหน่งของข้อมูลในหน่วยความจำ (เช่น
+      บ้านเลขที่ 1024)
+      <br />
+      Data Bus (บัสข้อมูล) = ขนข้อมูลจริงที่จะอ่านหรือเขียน (เช่น ตัวเลข 99,
+      ข้อความ “Hello”)
+      <br />
+      Control Bus (บัสควบคุม) = บอกว่า CPU จะ ทำอะไรกับข้อมูลนั้น เช่น Read ,
+      Write , Wait , Reset
+      <br />
+    </span>
+
+    <div class="my-5 flex flex-col gap-5">
+      <img
+        src="/project/systembus.webp"
+        loading="lazy"
+        class="h-96"
+        alt="computerarchitecture"
+      />
+    </div>
+
+    <div class="my-5 flex flex-col gap-5">
+      <img
+        src="/project/computerarchitecture.webp"
+        loading="lazy"
+        class="h-96"
+        alt="computerarchitecture"
+      />
+    </div>
+
+    <div class="my-5 flex flex-col gap-5">
+      <img
+        src="/project/4com.webp"
+        loading="lazy"
+        class="h-96"
+        alt="computerarchitecture"
+      />
+    </div>
 
     <div class="py-5">
       <iframe
