@@ -38,8 +38,8 @@ import { useSeo } from "@/composables/useSeo.js";
 
 useSeo({
   title: "network,vlan",
-  description: "network,vlan",,
-  keywords: "network,vlan",,
+  description: "network,vlan",
+  keywords: "network,vlan",
   url: "https://portfolio-frontend-ten-steel.vercel.app/",
 });
 </script>

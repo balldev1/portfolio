@@ -51,7 +51,7 @@
 <script setup>
 // import { onMounted } from "vue";
 // สร้าง array ของรูปภาพแบบอัตโนมัติถึง /modern/22.jpg
-// const images = Array.from({ length: 33 }, (_, i) => `/modern/${i + 1}.jpg`);
+const images = Array.from({ length: 33 }, (_, i) => `/modern/${i + 1}.jpg`);
 
 // onMounted(async () => {
 //   const res = await fetch("https://ipapi.co/json/");

@@ -39,8 +39,8 @@ import { useSeo } from "@/composables/useSeo.js";
 
 useSeo({
   title: "network,static",
-  description: "network,static",,
-  keywords: "network,static",,
+  description: "network,static",
+  keywords: "network,static",
   url: "https://portfolio-frontend-ten-steel.vercel.app/",
 });
 </script>
