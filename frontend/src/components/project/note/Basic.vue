@@ -48,6 +48,7 @@ import Jqueryvue from "./Basic/Jqueryvue.vue";
 import Vifvshow from "./Basic/Vifvshow.vue";
 import Watch_computed from "./Basic/Watch_computed.vue";
 import Sql_nosql from "./Basic/Sql_nosql.vue";
+import { useSeo } from "@/composables/useSeo.js";
 
 type SectionName =
   | "dom"
@@ -103,4 +104,14 @@ const jqueryvueRef = refsMap.jqueryvue;
 const vifvshowRef = refsMap.vifvshow;
 const watch_computedRef = refsMap.watch_computed;
 const sql_nosqlRef = refsMap.sql_nosql;
+
+useSeo({
+  title:
+    "dom,oop,mvc,lifecycle,propsemit,vue,nuxt,jqueryvue,v-if,v-show,watch,computed,sql_nosql,sql_nosql",
+  description:
+    "dom,oop,mvc,lifecycle,propsemit,vue,nuxt,jqueryvue,v-if,v-show,watch,computed,sql_nosql,sql_nosql",
+  keywords:
+    "dom,oop,mvc,lifecycle,propsemit,vue,nuxt,jqueryvue,v-if,v-show,watch,computed,sql_nosql,sql_nosql",
+  url: "https://portfolio-frontend-ten-steel.vercel.app/",
+});
 </script>
