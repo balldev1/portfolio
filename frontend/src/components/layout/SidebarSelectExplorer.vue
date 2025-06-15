@@ -147,6 +147,11 @@ const items = computed(() => [
             route: "/computerarchitecture",
           },
           {
+            label: "Electric circiut",
+            icon: "pi pi-code ",
+            route: "/electriccirciut",
+          },
+          {
             label: "Vue",
             icon: "pi pi-code ",
             route: "/vue",
