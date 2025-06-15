@@ -90,7 +90,20 @@
       <br />
       R = ความต้านทาน (Ohm, หน่วยเป็น Ω)
       <br />
+      * P กำลังไฟฟ้า (w)
       <br />
+      ถ้า ความต้านทาน (load) กระแส i จะไหล จาก + ไป -
+      <br />
+      ถ้า ความจ่ายไฟ (source) กระแส i จะไหล จาก - ไป +
+      <br />
+      <br />
+    </span>
+
+    <span class="text-gray-300 text-md text-balance">
+      - กำลังไฟฟ้าจ่าย (Power Supplied) เกิดจากแหล่งจ่ายไฟ จะไหล - ไป +
+      <br />
+      - กำลังไฟฟ้าดูดกลื่น (Power Absorbed) เกิดจากได้ทั้งแหล่งจ่ายและ load
+      จะไหล + ไป -
     </span>
 
     <div class="my-5 flex flex-col gap-5">
