@@ -106,6 +106,23 @@
       จะไหล + ไป -
     </span>
 
+    <span class="text-gray-300 text-md text-balance">
+      หาค่า i (กระแส) สูตร i = v / r
+      <br />
+      หาค่า g (ความนำ) สูตร g = 1 / r
+      <br />
+      หาค่า p (กำลังไฟ) สูตร p = i x v
+      <br />
+    </span>
+
+    <span class="text-gray-300 text-md text-balance">
+      Absorb = การดูดซับพลังงานไฟฟ้า ใช้กับอุปกรณ์ที่ รับพลังงานไฟฟ้าเข้ามา เช่น
+      หลอดไฟ
+      <br />
+      Delivery = การส่งหรือจ่ายพลังงานไฟฟ้า ใช้กับแหล่งจ่ายไฟ เช่น โรงไฟฟ้า
+      <br />
+    </span>
+
     <div class="my-5 flex flex-col gap-5">
       <img
         src="/project/elec1.webp"
@@ -127,6 +144,15 @@
     <div class="my-5 flex flex-col gap-5">
       <img
         src="/project/elec3.webp"
+        loading="lazy"
+        class="h-full"
+        alt="cache"
+      />
+    </div>
+
+    <div class="my-5 flex flex-col gap-5">
+      <img
+        src="/project/elec4.webp"
         loading="lazy"
         class="h-full"
         alt="cache"
