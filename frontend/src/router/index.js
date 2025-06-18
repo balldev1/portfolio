@@ -36,6 +36,7 @@ import SpanningTree from "@/views/SpanningTree.vue";
 import Failover from "@/views/Failover.vue";
 import ComputerArchitecture from "@/views/ComputerArchitecture.vue";
 import Electriccirciut from "@/views/Electriccirciut.vue";
+import Logic from "@/views/Logic.vue";
 
 const routes = [
   { path: "/", component: Public },
@@ -74,6 +75,7 @@ const routes = [
   { path: "/failover", component: Failover },
   { path: "/computerarchitecture", component: ComputerArchitecture },
   { path: "/electriccirciut", component: Electriccirciut },
+  { path: "/logic", component: Logic },
 ];
 const router = createRouter({
   history: createWebHistory(),

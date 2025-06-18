@@ -152,6 +152,11 @@ const items = computed(() => [
             route: "/electriccirciut",
           },
           {
+            label: "Logic",
+            icon: "pi pi-code ",
+            route: "/logic",
+          },
+          {
             label: "Vue",
             icon: "pi pi-code ",
             route: "/vue",
