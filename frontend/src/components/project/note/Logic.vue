@@ -11,6 +11,14 @@
     <div class="my-5 flex flex-col gap-5">
       <img src="/project/logic.webp" loading="lazy" class="" alt="cdn" />
     </div>
+
+    <div class="my-5 flex flex-col gap-5">
+      <img src="/project/logic2.webp" loading="lazy" class="" alt="cdn" />
+    </div>
+
+    <div class="my-5 flex flex-col gap-5">
+      <img src="/project/logic3.webp" loading="lazy" class="" alt="cdn" />
+    </div>
   </div>
 </template>
 
