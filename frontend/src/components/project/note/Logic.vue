@@ -8,16 +8,12 @@
       สรุปตามความเข้าใจ
     </span>
 
-    <div class="my-5 flex flex-col gap-5">
-      <img src="/project/logic.webp" loading="lazy" class="" alt="cdn" />
-    </div>
-
-    <div class="my-5 flex flex-col gap-5">
-      <img src="/project/logic2.webp" loading="lazy" class="" alt="cdn" />
-    </div>
-
-    <div class="my-5 flex flex-col gap-5">
-      <img src="/project/logic3.webp" loading="lazy" class="" alt="cdn" />
+    <div
+      v-for="(img, index) in images"
+      :key="index"
+      class="my-5 flex flex-col gap-5"
+    >
+      <img :src="img" loading="lazy" class="" alt="cdn" />
     </div>
   </div>
 </template>
@@ -31,4 +27,12 @@ useSeo({
   keywords: "logic",
   url: "https://portfolio-frontend-ten-steel.vercel.app/",
 });
+
+// ✅ สร้าง array รูปภาพ
+const images = [
+  "/project/logic.webp",
+  "/project/logic2.webp",
+  "/project/logic3.webp",
+  "/project/logic4.webp",
+];
 </script>
