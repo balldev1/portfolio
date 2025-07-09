@@ -14,10 +14,13 @@
       the Computer Crime Act for audit and legal purposes.
     </span>
     <div class="w-full">
-      <img src="/project/report1.webp" loading="lazy" alt="mikrotik" />
+      <img src="/project/report3.webp" loading="lazy" alt="mikrotik" />
     </div>
     <div class="w-full">
-      <img src="/project/report2.webp" loading="lazy" alt="mikrotik" />
+      <img src="/project/report4.webp" loading="lazy" alt="mikrotik" />
+    </div>
+    <div class="w-full">
+      <img src="/project/report5.webp" loading="lazy" alt="mikrotik" />
     </div>
   </div>
 </template>

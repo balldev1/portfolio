@@ -10,6 +10,7 @@ import Pokemon from "../views/Pokemon.vue";
 import Currency from "../views/Currency.vue";
 import Note from "../views/Note.vue";
 import Tr069 from "../views/Tr069.vue";
+import Cwmp from "@/views/Cwmp.vue";
 import Reportrepair from "../views/Reportrepair.vue";
 import Weight from "../views/Weight.vue";
 import Door from "../views/Door.vue";
@@ -45,6 +46,7 @@ const routes = [
   { path: "/ss-it", component: Ssit },
   { path: "/modern-network", component: Modernnetwork },
   { path: "/tr069", component: Tr069 },
+  { path: "/cwmp", component: Cwmp },
   { path: "/reportrepair", component: Reportrepair },
   { path: "/orderfood", component: OrderFood },
   { path: "/weight", component: Weight },
