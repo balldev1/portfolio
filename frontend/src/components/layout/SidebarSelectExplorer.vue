@@ -102,6 +102,11 @@ const items = computed(() => [
             route: "/reportrepair",
           },
           {
+            label: t("install_moniter"),
+            icon: "pi pi-twitch",
+            route: "/installmoniter",
+          },
+          {
             label: t("orderfood"),
             icon: "pi pi-twitch",
             route: "/orderfood",
