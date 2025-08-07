@@ -92,6 +92,11 @@ const items = computed(() => [
             route: "/tr069",
           },
           {
+            label: t("manage system"),
+            icon: "pi pi-twitch",
+            route: "/manage",
+          },
+          {
             label: t("cwmp"),
             icon: "pi pi-twitch",
             route: "/cwmp",
