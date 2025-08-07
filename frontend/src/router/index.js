@@ -10,6 +10,7 @@ import Pokemon from "../views/Pokemon.vue";
 import Currency from "../views/Currency.vue";
 import Note from "../views/Note.vue";
 import Tr069 from "../views/Tr069.vue";
+import Manage from "../views/Manage.vue";
 import InstallMoniter from "../views/InstallMoniter.vue";
 import Cwmp from "@/views/Cwmp.vue";
 import Reportrepair from "../views/Reportrepair.vue";
@@ -47,6 +48,7 @@ const routes = [
   { path: "/ss-it", component: Ssit },
   { path: "/modern-network", component: Modernnetwork },
   { path: "/tr069", component: Tr069 },
+  { path: "/manage", component: Manage },
   { path: "/installmoniter", component: InstallMoniter },
   { path: "/cwmp", component: Cwmp },
   { path: "/reportrepair", component: Reportrepair },
